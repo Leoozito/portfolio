@@ -1,11 +1,14 @@
-import React from 'react'
+import Image from 'next/image'
+import Navbar from '../components/Navbar'
+import Apresentacao from '../components/Apresentacao'
 
-function App() {
-    return (
-        <div className="text-4xl text-blue-800 font-bold p-6 bg-red-200 w-56 h-32 sm-h56">
-          <h1>Leonardo</h1>
-        </div>
-    );
+export default function Home() {
+  return (
+    <>
+      <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+        <Navbar/>
+        
+      </div>
+    </>
+  )
 }
-
-export default App;
