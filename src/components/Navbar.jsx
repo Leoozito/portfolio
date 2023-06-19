@@ -1,25 +1,66 @@
+"use client"
+
 import Image from 'next/image'
+import { FaBars } from 'react-icons/fa'
+import { useState } from 'react';
 
 export default function Navbar() {
-  return (
-    <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto" src="/logo.png" alt=""/>
-            </a>
-          </div>
-          <div className="hidden lg:flex lg:flex-auto  lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Product</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Features</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Company</a>
-          </div>
-        </nav>
+  const [menuAberto, setMenuAberto] = useState(false);
 
-      </header>
-    </div>
+  const alternarMenu = () => {
+    setMenuAberto(!menuAberto);
+  };
+
+  return (
+    <nav className="w-full fixed top-0 bg-white">
+      <div className="container mx-auto py-5 flex justify-between">
+        <div className="flex items-center gap-2">
+          <img className="w-8" src="/logo.png" alt=""/>
+          <span className="text-2xl font-bold text-red-900">Your Company.</span>
+        </div>
+          {/* <div className='hidden md:flex items-center justify-center'> */}
+        <ul className='hidden md:flex items-center space-x-10 text-gray-600 font-bold text-sm uppercase'>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Homepage</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>About Me</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Services</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Works</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Contact</a>
+          </li>
+        </ul>
+        <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span>
+          {/* </div> */}
+        <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
+          <FaBars />
+        </div>
+        {menuAberto && (
+        <ul id="menu" className='bg-red-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white'>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Homepage</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>About Me</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Services</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Works</a>
+          </li>
+          <li className='hover:text-gray-500'>
+            <a href='#'>Contact</a>
+          </li>
+        </ul>
+        )}
+      </div>
+    </nav>
   )
 }
