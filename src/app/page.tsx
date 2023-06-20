@@ -7,6 +7,9 @@ export default function Home() {
     <>
       <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
         <Navbar/>
+        <div className='p-40'>
+          <Apresentacao/>
+        </div>
       </div>
     </>
   )
