@@ -2,6 +2,7 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react' // instalar "npm install @headlessui/react"
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline' //instalar "npm install @heroicons/react"
+import Sidebar from '../../components/Sidebar'
 
 export default function Teste() {
 
@@ -9,12 +10,13 @@ export default function Teste() {
 
     const alternarModal = () => {
         setOpen(!open);
-      };
+    };
   
     const cancelButtonRef = useRef(null)
 
     return (
-        <div className='p-4 mx-14 gap-2'>
+        <div className='py-8 mx-8'>
+            <Sidebar/>
             <section className="relative isolate overflow-hidden bg-white px-6 py-8 lg:px-8">
                 <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
                 <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600 ring-1 ring-indigo-300 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
@@ -49,8 +51,8 @@ export default function Teste() {
                         <div className="relative pl-16">
                             <dt className="text-base font-semibold leading-7 text-gray-900">
                                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                                    <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                    <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
                                     </svg>
                                 </div>
                                 Push to deploy.HTML
