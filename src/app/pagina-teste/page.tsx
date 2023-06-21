@@ -16,7 +16,17 @@ export default function Teste() {
 
     return (
         <div className='py-8 mx-8'>
-            <Sidebar/>
+            <div className=' flex items-center gap-2'>
+              <Sidebar/>
+              <div className="ml-auto flex items-center justify-end">
+                <a
+                  href="/"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Ir para Tela Inicial
+                </a>
+              </div>
+            </div>
             <section className="relative isolate overflow-hidden bg-white px-6 py-8 lg:px-8">
                 <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
                 <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600 ring-1 ring-indigo-300 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>

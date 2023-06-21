@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { FaBars } from 'react-icons/fa'
 import { useState } from 'react';
+import { RiMoonClearFill } from 'react-icons/ri'
 
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full fixed top-0 bg-white">
+    <nav className="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
       <div className="container mx-auto py-5 flex justify-between">
         <div className="flex items-center gap-2">
           <img className="w-8" src="/logo.png" alt=""/>
@@ -35,9 +36,12 @@ export default function Navbar() {
           <li className='hover:text-gray-500'>
             <a href='#'>Contact</a>
           </li>
+          <li className='hover:text-gray-500'>
+            <a href='/pagina-teste'>Tela de Criações e Testes</a>
+          </li>
         </ul>
-        <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span>
-          {/* </div> */}
+        {/* <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span> */}
+        <RiMoonClearFill className='text-3xl'/>
         <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
           <FaBars />
         </div>
