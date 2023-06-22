@@ -49,8 +49,8 @@ export default function Teste() {
                 </div>
             </section>
             
-            <div className="bg-white gap-2 my-10 py-6">
-                <div className="gap-2">
+            <div className="bg-white gap-2 my-10 py-6 grid md:flex grid-cols-2">
+                <div>
                     <div className="max-w-2xl lg:text-center">
                         <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster.HTML</h2>
                         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your app</p>
@@ -80,6 +80,63 @@ export default function Teste() {
                         CLICK HERE
                         </a>
                     </div>
+                </div>
+                <div className="flex ml-auto mr-40">
+                  <div className="bg-white p-10 rounded-xl shadow-lg">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
+                      <div className="flex flex-col">
+                        <label htmlFor="name" className="font-medium text-sm text-stone-600">Name</label>
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="john doe"
+                          className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
+                        />
+                      </div>
+
+                      <div className="flex flex-col">
+                        <label htmlFor="email" className="font-medium text-sm text-stone-600">Email</label>
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="johndoe@example.com"
+                          className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
+                        />
+                      </div>
+
+                      <div className="flex flex-col">
+                        <label htmlFor="date" className="font-medium text-sm text-stone-600">Published Date</label>
+                        <input
+                          type="date"
+                          id="date"
+                          className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
+                        />
+                      </div>
+
+                      <div className="flex flex-col">
+                        <label htmlFor="status" className="font-medium text-sm text-stone-600">Status</label>
+
+                        <select
+                          id="status"
+                          className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
+                        >
+                          <option>Active</option>
+                          <option>Pending</option>
+                          <option>Deleted</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="grid md:flex grid-cols-2 justify-end space-x-4 w-full mt-6">
+                      <button className="px-4 py-2 rounded-lg bg-stone-400 hover:bg-stone-500 font-bold text-white shadow-lg shadow-stone-200 transition ease-in-out duration-200 translate-10">
+                        Reset
+                      </button>
+
+                      <button className="px-4 py-2 rounded-lg bg-orange-400 hover:bg-orange-500 font-bold text-white shadow-lg shadow-orange-200 transition ease-in-out duration-200 translate-10">
+                        Search
+                      </button>
+                    </div>
+                  </div>
                 </div>
             </div>
 
@@ -153,12 +210,12 @@ export default function Teste() {
             </Transition.Root>
             )}
 
-            <div className="shadow-sm h-screen">
-                <div className='block bg-transparent overflow-x-auto w-full rounded-lg shadow md:block'>
-                    <table className='w-full'>
-                        <thead className='bg-gray-50 border-b-2 border-gray-200'> 
+            <div className="shadow-sm mb-6">
+                <div className='block bg-transparent overflow-x-auto w-full rounded-lg shadow-xl'>
+                    <table className='w-full border-collapse border border-gray-200'>
+                        <thead className='bg-gray-100 border-b-2 border-gray-300'> 
                             <tr>
-                                <th className="w-26 p-4 text sm font-semibold tracking-wide text-left">No.</th>
+                                <th className="w-26 p-4 text sm font-semibold tracking-wide text-left ">No.</th>
                                 <th className="p-3 text sm font-semibold tracking-wide text-left">Details</th>
                                 <th className="w-26 p-4 text sm font-semibold tracking-wide text-left">Status</th>
                                 <th className="w-26 p-4 text sm font-semibold tracking-wide text-left">Date</th>
@@ -176,7 +233,7 @@ export default function Teste() {
                                 <td className="p-4 text-sm text-gray-700 whitespace-nowrap">$200.00</td>
                                 <td className="p-4 text-sm text-gray-700 whitespace-nowrap peer-checked:block">Lorem Ipsum</td>
                             </tr>
-                            <tr className='bg-gray-50'>
+                            <tr className='bg-gray-100'>
                                 <td className="p-4 font-bold text-blue-500 whitespace-nowrap"><a href="#">10001</a></td>
                                 <td className="p-4 text-sm text-gray-700 whitespace-nowrap">Kring New Fit office chair, mesh + PU, blac</td>
                                 <td className='p-2'><span className="p-2 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-300 rounded-lg bg-opacity-50 whitespace-nowrap">Shipped</span></td>
@@ -192,7 +249,7 @@ export default function Teste() {
                                 <td className="p-4 text-sm text-gray-700 whitespace-nowrap">$200.00</td>
                                 <td className="p-4 text-sm text-gray-700 whitespace-nowrap">Lorem Ipsum</td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-gray-100">
                                 <td className="p-4 font-bold text-blue-500 whitespace-nowrap uppercase"><a href="#">Lorem Ipsum</a></td>
                                 <td className="p-4 text-sm text-gray-700 whitespace-nowrap uppercase">Lorem Ipsum</td>
                                 <td className="p-4 text-xs font-medium uppercase tracking-wider text-gray-600 rounded-lg bg-opacity-50 whitespace-nowrap">Lorem Ipsum</td>
@@ -211,8 +268,38 @@ export default function Teste() {
                         </tbody>
                     </table>
                 </div>
-
             </div>
+            <div className="flex justify-center items-center">
+              <a href="#" className="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 rtl:-scale-x-100">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                  </svg>
+
+                  <span>
+                      previous
+                  </span>
+              </a>
+
+              <div className="items-center hidden md:flex gap-x-3">
+                  <a href="#" className="px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60">1</a>
+                  <a href="#" className="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">2</a>
+                  <a href="#" className="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">3</a>
+                  <a href="#" className="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">...</a>
+                  <a href="#" className="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">12</a>
+                  <a href="#" className="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">13</a>
+                  <a href="#" className="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">14</a>
+              </div>
+
+              <a href="#" className="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+                  <span>
+                      Next
+                  </span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 rtl:-scale-x-100">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+              </a>
+          </div>
         </div>
     )
 }
