@@ -3,6 +3,8 @@ import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react' // instalar "npm install @headlessui/react"
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline' //instalar "npm install @heroicons/react"
 import Sidebar from '../../components/Sidebar'
+import { Button, Input } from "@material-tailwind/react";
+// import Image from 'next/image'
 
 export default function Teste() {
 
@@ -36,7 +38,7 @@ export default function Teste() {
                             <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
                         </blockquote>
                         <figcaption className="mt-10 gap-2">
-                            <img className="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                            {/* <Image className="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/> */}
                             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                                 <div className="font-semibold text-gray-900">Judith Black.HTML</div>
                                 <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
@@ -80,6 +82,9 @@ export default function Teste() {
                         CLICK HERE
                         </a>
                     </div>
+                    <Button onClick={() => window.location.href = "/formulario"} className="px-6 py-4 rounded-lg bg-green-500 hover:bg-green-700 font-bold text-white shadow-lg shadow-green-200 duration-200 translate-10">
+                        Formulario
+                    </Button>
                 </div>
                 <div className="flex ml-auto mr-40">
                   <div className="bg-white p-10 rounded-xl shadow-lg">
@@ -139,7 +144,6 @@ export default function Teste() {
                   </div>
                 </div>
             </div>
-
             {open && (
             <Transition.Root show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
