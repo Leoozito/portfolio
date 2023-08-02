@@ -85,6 +85,9 @@ export default function Teste() {
                     <Button onClick={() => window.location.href = "/formulario"} className="px-6 py-4 rounded-lg bg-green-500 hover:bg-green-700 font-bold text-white shadow-lg shadow-green-200 duration-200 translate-10">
                         Formulario
                     </Button>
+                    <Button className="active:bg-gray-900 focus:bg-gray-900 ml-20 px-6 py-4 rounded-lg bg-green-500 hover:bg-green-700 font-bold text-white shadow-lg shadow-green-200 duration-200 translate-10">
+                        Formulario
+                    </Button>
                 </div>
                 <div className="flex ml-auto mr-40">
                   <div className="bg-white p-10 rounded-xl shadow-lg">
