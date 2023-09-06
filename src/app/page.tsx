@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Apresentacao from '../components/Apresentacao'
+import Biografia from '../components/Biografia'
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
         <div className='p-40'>
           <Apresentacao/>
         </div>
+      </div>
+      <div>
+        <Biografia/>
       </div>
     </>
   )
