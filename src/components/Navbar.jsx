@@ -13,11 +13,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+    <nav className="w-full fixed top-0 bg-transparent z-10 dark:bg-slate-900">
       <div className="container mx-auto py-5 flex justify-between">
         <div className="flex items-center gap-2">
-          <img className="w-8" src="/logo.png" alt=""/>
-          <span className="text-2xl font-bold text-red-900">Your Company.</span>
+          <span className="text-2xl font-bold text-blue-900">Logo Company.</span>
         </div>
           {/* <div className='hidden md:flex items-center justify-center'> */}
         <ul className='hidden md:flex items-center space-x-10 text-gray-600 font-bold text-sm uppercase'>

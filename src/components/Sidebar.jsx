@@ -68,7 +68,7 @@ export default function Sidebar() {
     const modalRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const handleClickOutside = (event: any) => {
+        const handleClickOutside = (event) => {
           if (modalRef.current && !modalRef.current.contains(event.target)) {
             setOpen(false);
           }

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import Apresentacao from '../components/Apresentacao'
-import Biografia from '../components/Biografia'
+import Apresentacao from '../sections/Apresentacao'
+import Biografia from '../sections/Biografia'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
           <Apresentacao/>
         </div>
       </div>
-      <div>
+      <div className='bg-indigo-200 relative overflow-hidden'>
         <Biografia/>
       </div>
     </>
