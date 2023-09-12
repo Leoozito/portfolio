@@ -12,7 +12,7 @@ export default function Home() {
           <Apresentacao/>
         </div>
       </div>
-      <div className='bg-indigo-200 relative overflow-hidden'>
+      <div className='bg-indigo-200 relative overflow-hidden h-screen'>
         <Biografia/>
       </div>
     </>

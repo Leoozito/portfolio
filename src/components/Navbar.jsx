@@ -2,24 +2,43 @@
 
 import Image from 'next/image'
 import { FaBars } from 'react-icons/fa'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { RiMoonClearFill } from 'react-icons/ri'
 
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    // Função para lidar com a rolagem da tela
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);    
+  const navClasses = `w-full fixed top-0 backdrop-blur z-10 dark:bg-slate-900 ${
+    scrolling ? "shadow-xl" : ""
+  }`;
 
   const alternarMenu = () => {
     setMenuAberto(!menuAberto);
   };
 
   return (
-    <nav className="w-full fixed top-0 bg-transparent z-10 dark:bg-slate-900">
+    <nav className={navClasses}>
       <div className="container mx-auto py-5 flex justify-between">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold text-blue-900">Logo Company.</span>
         </div>
           {/* <div className='hidden md:flex items-center justify-center'> */}
-        <ul className='hidden md:flex items-center space-x-10 text-gray-600 font-bold text-sm uppercase'>
+        <ul className='hidden md:flex items-center space-x-10 text-gray-700 font-bold text-sm uppercase'>
           <li className='hover:text-gray-500'>
             <a href='#'>Homepage</a>
           </li>
