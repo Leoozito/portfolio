@@ -3,14 +3,18 @@
 import Image from 'next/image'
 import { FaBars } from 'react-icons/fa'
 import { useState, useEffect } from 'react';
-import { RiMoonClearFill } from 'react-icons/ri'
+import { BsFillMoonStarsFill,BsFillSunFill } from 'react-icons/bs'
 
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [modifyIconTheme, setModifyIconTheme] = useState(false)
+
+  const modifyIcon = () => {
+    setModifyIconTheme(!modifyIconTheme)
+  }
 
   useEffect(() => {
-    // Função para lidar com a rolagem da tela
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrolling(true);
@@ -59,7 +63,16 @@ export default function Navbar() {
           </li>
         </ul>
         {/* <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span> */}
-        <RiMoonClearFill className='text-3xl'/>
+        {!modifyIconTheme && (
+        <button onClick={modifyIcon} >
+          <BsFillMoonStarsFill className='text-3xl'/>
+        </button>
+        )}
+        {modifyIconTheme && (
+        <button onClick={modifyIcon}>
+          <BsFillSunFill className='text-3xl'/>
+        </button>
+        )}
         <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
           <FaBars />
         </div>
