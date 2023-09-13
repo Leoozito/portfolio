@@ -6,13 +6,13 @@ import Biografia from '../sections/Biografia'
 export default function Home() {
   return (
     <>
-      <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+      <div className="h-1/2 lg:h-screen dark:z-40 dark:bg-[#020617] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 relative overflow-hidden">
         <Navbar/>
         <div className='p-40'>
           <Apresentacao/>
         </div>
       </div>
-      <div className='bg-indigo-200 relative overflow-hidden h-screen'>
+      <div className='bg-indigo-200 relative dark:bg-[#1e1b4b] dark:from-[#0f172a] bg-gradient-to-t overflow-hidden h-screen'>
         <Biografia/>
       </div>
     </>
