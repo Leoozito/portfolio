@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Apresentacao from '../sections/Apresentacao'
 import Biografia from '../sections/Biografia'
+import Habilidades from '../sections/Habilidade'
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       </div>
       <div className='bg-indigo-200 relative dark:bg-[#1e1b4b] dark:from-[#0f172a] bg-gradient-to-t overflow-hidden h-screen'>
         <Biografia/>
+      </div>
+      <div className='bg-indigo-200 relative dark:bg-[#1e1b4b] dark:from-[#0f172a] bg-gradient-to-t overflow-hidden h-screen'>
+        <Habilidades/>
       </div>
     </>
   )
