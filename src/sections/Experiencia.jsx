@@ -1,3 +1,5 @@
+'use client'
+
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { PiCertificate } from 'react-icons/pi'
@@ -14,23 +16,18 @@ export default function Experience() {
                     date="09/07/2021"
                     icon={<PiCertificate/>}
                     contentStyle={{
-                        background:
-                            theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                        background: 'rgb(33, 150, 243)', color: '#fff',
                         boxShadow: "none",
                         border: "1px solid rgba(0, 0, 0, 0.05)",
                         textAlign: "left",
                         padding: "1.3rem 2rem",
                     }}
                     contentArrowStyle={{
-                        borderRight:
-                            theme === "light"
-                            ? "0.4rem solid #9ca3af"
-                            : "0.4rem solid rgba(255, 255, 255, 0.5)",
-                        }}
+                        borderRight: '7px solid  rgb(33, 150, 243)',
+                    }}
                     iconStyle={{
-                    background:
-                        theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-                    fontSize: "1.5rem",
+                        background: 'rgb(33, 150, 243)', color: '#fff',
+                        fontSize: "1.5rem",
                     }}
                 >
                     <h1>Curso - Desenvolvedor de WebSite e Design Grafico</h1>
