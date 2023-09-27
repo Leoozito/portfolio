@@ -10,7 +10,7 @@ export default function Skills() {
             <div className="justify-center items-center flex">
                 <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Habilidades</h1>
             </div>
-            <div className="w-4/5 mt-12 justify-center flex gap-8">
+            <div className="mt-12 justify-center flex gap-8">
                 <div
                     className="h-24 w-24 justify-center flex rounded-full items-center bg-orange-200"
                 >
@@ -29,6 +29,16 @@ export default function Skills() {
                         width={50} 
                         height={50} 
                         src="/img_tecnologies/css.png" 
+                        alt="foto do icon html" 
+                    /> 
+                </div>
+                <div
+                    className="h-24 w-24 justify-center flex rounded-full items-center bg-blue-200"
+                >
+                    <Image
+                        width={50} 
+                        height={50} 
+                        src="/img_tecnologies/tailwindcss-icon.svg" 
                         alt="foto do icon html" 
                     /> 
                 </div>
@@ -79,6 +89,26 @@ export default function Skills() {
                         width={50} 
                         height={50} 
                         src="/img_tecnologies/mu5.png" 
+                        alt="foto do icon html" 
+                    /> 
+                </div>
+                <div
+                    className="h-24 w-24 justify-center flex rounded-full items-center bg-gray-300"
+                >
+                    <Image
+                        width={50} 
+                        height={50} 
+                        src="/img_tecnologies/nextjs.svg" 
+                        alt="foto do icon html" 
+                    /> 
+                </div>
+                <div
+                    className="h-24 w-24 justify-center flex rounded-full items-center bg-gray-800"
+                >
+                    <Image
+                        width={50} 
+                        height={50} 
+                        src="/img_tecnologies/react.png" 
                         alt="foto do icon html" 
                     /> 
                 </div>
