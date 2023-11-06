@@ -8,7 +8,7 @@ import { AiOutlineCode } from 'react-icons/ai'
 export default function Experience() {
     return (
         <>
-            <div className="justify-center items-center flex mt-16">
+            <div className="justify-center items-center flex mt-16 mb-10">
                 <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Experiencia</h1>
             </div>
             <VerticalTimeline lineColor="">

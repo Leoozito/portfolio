@@ -4,6 +4,8 @@ import Apresentacao from '../sections/Apresentacao'
 import Biografia from '../sections/Biografia'
 import Habilidades from '../sections/Habilidade'
 import Experience from '../sections/Experiencia'
+import Projects from '../sections/Projetos'
+import Contact from '../sections/Contact'
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <div className='bg-indigo-200 relative dark:bg-[#0f172a] bg-gradient-to-t overflow-hidden '>
         <Habilidades/>
         <Experience/>
+        <Projects/>
+        <Contact/>
       </div>
     </>
   )
