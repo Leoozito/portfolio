@@ -22,8 +22,10 @@ export default function Home() {
       <div className='bg-indigo-200 relative dark:bg-[#0f172a] bg-gradient-to-t overflow-hidden '>
         <Habilidades/>
         <Experience/>
-        <Projects/>
-        <Contact/>
+        {/* <Projects/> */}
+        <div className='p-6 rounded-tl-[50%] rounded-tr-[50%] bg-indigo-900 relative dark:bg-[#0f172a] overflow-hidden '>
+          <Contact/>
+        </div>
       </div>
     </>
   )
