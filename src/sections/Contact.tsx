@@ -21,7 +21,7 @@ export default function Contact() {
             <div className="justify-center ml-60 mr-60 flex dark:bg-[#1e293b]">
                 <div className="justify-center grid grid-cols-1">
                     <div className="flex mb-8 gap-12">
-                        <Input placeholder="Seu Nome" value={nomeRecrutador} className="items-center "/>
+                        <Input onChange={() => setNomeRecrutador} placeholder="Seu Nome" value={nomeRecrutador} className="items-center "/>
                         <Input placeholder="Endereço de email" className="items-center"/>
                     </div>
                     <div>

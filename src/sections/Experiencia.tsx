@@ -13,6 +13,7 @@ export default function Experience() {
             </div>
             <VerticalTimeline lineColor="">
                 <VerticalTimelineElement
+                    visible={true}
                     className="vertical-timeline-element--work"
                     date="09/07/2021"
                     icon={<PiCertificate/>}
@@ -38,9 +39,8 @@ export default function Experience() {
                         ratione adipisci recusandae maxime assumenda odio explicabo distinctio, pariatur doloremque! Debitis.
                     </p>
                 </VerticalTimelineElement>
-            </VerticalTimeline>
-            <VerticalTimeline lineColor="">
                 <VerticalTimelineElement
+                    visible={true}
                     className="vertical-timeline-element--work"
                     date="09/07/2021"
                     icon={<AiOutlineCode/>}
