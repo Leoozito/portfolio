@@ -61,16 +61,13 @@ export default function Navbar() {
             <a href='#'>About Me</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Services</a>
+            <a href='#'>Skills</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Works</a>
+            <a href='#'>Experience</a>
           </li>
           <li className='hover:text-gray-500'>
             <a href='#'>Contact</a>
-          </li>
-          <li className='hover:text-gray-500'>
-            <a href='/pagina-teste'>Tela de Criações e Testes</a>
           </li>
         </ul>
         {/* <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span> */}

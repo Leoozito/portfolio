@@ -16,14 +16,18 @@ export default function Home() {
           <Apresentacao/>
         </div>
       </div>
-      <div className='bg-indigo-200 relative dark:bg-[#1e1b4b] dark:from-[#0f172a] bg-gradient-to-t overflow-hidden h-screen'>
-        <Biografia/>
-      </div>
-      <div className='bg-indigo-200 relative dark:bg-[#0f172a] bg-gradient-to-t overflow-hidden '>
-        <Habilidades/>
-        <Experience/>
+      <div className='bg-indigo-200 relative dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden '>
+        <div className='my-20'>
+          <Biografia/>
+        </div>
+        <div className='my-20'>
+          <Habilidades/>
+        </div>
+        <div className='mb-40'>
+          <Experience/>
+        </div>
         {/* <Projects/> */}
-        <div className='p-6 rounded-tl-[50%] rounded-tr-[50%] bg-indigo-900 relative dark:bg-[#0f172a] overflow-hidden '>
+        <div className='p-6 rounded-tl-[50%] rounded-tr-[50%] bg-indigo-900 relative overflow-hidden '>
           <Contact/>
         </div>
       </div>
