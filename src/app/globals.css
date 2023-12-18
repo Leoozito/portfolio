@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 html {
-  --line-color: #e5e7eb
-  scroll-behavior: smooth
+  --line-color: #e5e7eb;
+  scroll-behavior: smooth;
 }
 
 /* :root {

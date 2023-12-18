@@ -55,19 +55,19 @@ export default function Navbar() {
           {/* <div className='hidden md:flex items-center justify-center'> */}
         <ul className='hidden md:flex items-center space-x-10 dark:text-white text-gray-700 font-bold text-sm uppercase'>
           <li className='hover:text-gray-500'>
-            <a href='#'>Homepage</a>
+            <a href='#apresentacao'>Homepage</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>About Me</a>
+            <a href='#biografia'>About Me</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Skills</a>
+            <a href='#habilidades'>Skills</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Experience</a>
+            <a href='#experiencia'>Experience</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Contact</a>
+            <a href='#contato'>Contact</a>
           </li>
         </ul>
         {/* <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span> */}
