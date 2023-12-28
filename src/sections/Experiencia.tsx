@@ -12,6 +12,7 @@ export default function Experience() {
                 <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Experiencia</h1>
             </div>
             <VerticalTimeline lineColor="">
+                {/* descricao de cursos */}
                 <VerticalTimelineElement
                     visible={true}
                     className="vertical-timeline-element--work"
@@ -39,6 +40,8 @@ export default function Experience() {
                         ratione adipisci recusandae maxime assumenda odio explicabo distinctio, pariatur doloremque! Debitis.
                     </p>
                 </VerticalTimelineElement>
+
+                {/* descricao de trabalho */}
                 <VerticalTimelineElement
                     visible={true}
                     className="vertical-timeline-element--work"
@@ -66,6 +69,7 @@ export default function Experience() {
                         ratione adipisci recusandae maxime assumenda odio explicabo distinctio, pariatur doloremque! Debitis.
                     </p>
                 </VerticalTimelineElement>
+                
             </VerticalTimeline>
         </>
     )

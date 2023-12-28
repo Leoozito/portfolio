@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FaBars } from 'react-icons/fa'
 import { useState, useEffect } from 'react';
 import { BsFillMoonStarsFill,BsFillSunFill } from 'react-icons/bs'
+import { VscError } from "react-icons/vsc";
 
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -52,7 +53,6 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold text-blue-900">Logo Company.</span>
         </div>
-          {/* <div className='hidden md:flex items-center justify-center'> */}
         <ul className='hidden md:flex items-center space-x-10 dark:text-white text-gray-700 font-bold text-sm uppercase'>
           <li className='hover:text-gray-500'>
             <a href='#apresentacao'>Homepage</a>
@@ -70,7 +70,6 @@ export default function Navbar() {
             <a href='#contato'>Contact</a>
           </li>
         </ul>
-        {/* <span className='hidden md:block w-5 cursor-pointer'>DARK MODE</span> */}
         {!modifyIconTheme && (
         <button onClick={modifyTheme} >
           <BsFillMoonStarsFill className='text-3xl dark:text-white'/>
@@ -81,27 +80,33 @@ export default function Navbar() {
           <BsFillSunFill className='text-3xl dark:text-white'/>
         </button>
         )}
-        <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
-          <FaBars />
-        </div>
+        {menuAberto ? (
+          <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
+            <FaBars />
+          </div> ) : (
+          <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
+            <VscError />
+          </div>
+        )}
         {menuAberto && (
-        <ul id="menu" className='bg-red-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white'>
-          <li className='hover:text-gray-500'>
-            <a href='#'>Homepage</a>
-          </li>
-          <li className='hover:text-gray-500'>
-            <a href='#'>About Me</a>
-          </li>
-          <li className='hover:text-gray-500'>
-            <a href='#'>Services</a>
-          </li>
-          <li className='hover:text-gray-500'>
-            <a href='#'>Works</a>
-          </li>
-          <li className='hover:text-gray-500'>
-            <a href='#'>Contact</a>
-          </li>
-        </ul>
+          <ul 
+            className='bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center'>
+            <li className='hover:text-gray-500'>
+              <a href='#'>Homepage</a>
+            </li>
+            <li className='hover:text-gray-500'>
+              <a href='#'>About Me</a>
+            </li>
+            <li className='hover:text-gray-500'>
+              <a href='#'>Services</a>
+            </li>
+            <li className='hover:text-gray-500'>
+              <a href='#'>Works</a>
+            </li>
+            <li className='hover:text-gray-500'>
+              <a href='#'>Contact</a>
+            </li>
+          </ul>
         )}
       </div>
     </nav>

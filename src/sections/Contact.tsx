@@ -12,12 +12,15 @@ export default function Contact() {
 
     return (
         <>
+            {/* titulo */}
             <div className="justify-center items-center flex mt-16">
                 <h1 className="uppercase text-3xl font-extrabold text-white">Contato</h1>
             </div>
             <div className="justify-center items-center flex mt-2 mb-20">
                 <span className="rounded-lg justify-center flex md:inline-flex md:w-[250px] h-[6px] bg-white ml-6"></span>
-            </div>        
+            </div>      
+
+            {/* recrutador enviar mensagem   */}
             <div className="justify-center ml-60 mr-60 flex">
                 <div className="justify-center grid grid-cols-1">
                     <div className="flex mb-8 gap-12">

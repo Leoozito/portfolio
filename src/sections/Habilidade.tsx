@@ -7,9 +7,12 @@ import { useRef } from "react";
 export default function Skills() {
     return (
         <>
+            {/* titulo */}
             <div className="justify-center items-center flex">
                 <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Habilidades</h1>
             </div>
+
+            {/* tecnologias */}
             <div className="mt-12 justify-center flex gap-8">
                 <div
                     className="h-24 w-24 justify-center flex rounded-full items-center bg-orange-200"
