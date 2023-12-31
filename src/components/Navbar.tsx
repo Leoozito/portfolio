@@ -51,7 +51,7 @@ export default function Navbar() {
     <nav className={navClasses}>
       <div className="container mx-auto py-5 flex justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-blue-900">Logo Company.</span>
+          <span className="sm:text-lg lg:text-xl xl:text-2xl font-bold text-blue-900">Logo Company.</span>
         </div>
         <ul className='hidden md:flex items-center space-x-10 dark:text-white text-gray-700 font-bold text-sm uppercase'>
           <li className='hover:text-gray-500'>
@@ -80,14 +80,15 @@ export default function Navbar() {
           <BsFillSunFill className='text-3xl dark:text-white'/>
         </button>
         )}
-        {menuAberto ? (
-          <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
-            <FaBars />
-          </div> ) : (
-          <div onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
-            <VscError />
-          </div>
+        {!menuAberto ? (
+          <button onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
+            <FaBars size={24}  className='dark:text-white'/>
+          </button>) : (
+          <button onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
+            <VscError size={24} className='dark:text-white'/>
+          </button>
         )}
+
         {menuAberto && (
           <ul 
             className='bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center'>
