@@ -10,16 +10,16 @@ import Contact from '../sections/Contact'
 export default function Home() {
   return (
     <>
-      <div className='z-80'><Navbar/></div>
+      <div className='z-96'><Navbar/></div>
       
-      <div className="dark:bg-[#020617] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 h-screen overflow-hidden relative">
+      <div className="dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 h-screen overflow-hidden">
           <section id="apresentacao">
             <Apresentacao/>
           </section>
       </div>
 
-      <div className='bg-indigo-200 relative dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden'>
-        <div className='2xl:my-20'>
+      <div className='bg-indigo-200 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden relative'>
+        <div className='my-20'>
           <section id="biografia">
             <Biografia/>
           </section>
