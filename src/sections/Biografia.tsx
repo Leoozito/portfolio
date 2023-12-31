@@ -9,7 +9,7 @@ export default function Biografia() {
 
     return (
         <>
-            <div className="w-full flex items-center grid-cols-2 justify-center mt-10">
+            <div className="w-full flex items-center grid-cols-2 justify-center 2xl:mt-10">
                 <div className="flex flex-col xl:flex-row xl:-mr-10">
                     <Image 
                         className="shadow-2xl shadow-gray-800 relative rounded-2xl group object-contain" 
