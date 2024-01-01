@@ -12,11 +12,11 @@ export default function Home() {
     <>
       <div className='z-96 overflow-hidden w-full'><Navbar/></div>
       
-      <div className="dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 h-screen overflow-hidden w-full">
+      {/* <div className="dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 h-screen overflow-hidden w-full">
           <section id="apresentacao">
             <Apresentacao/>
           </section>
-      </div>
+      </div> */}
 
       <div className='bg-indigo-200 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full'>
         <div className='my-20'>

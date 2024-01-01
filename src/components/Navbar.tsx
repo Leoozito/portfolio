@@ -109,19 +109,19 @@ export default function Navbar() {
           <ul 
             className='bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center'>
             <li className='hover:text-gray-500'>
-              <a href='#'>Homepage</a>
+              <a href='#apresentacao'>Homepage</a>
             </li>
             <li className='hover:text-gray-500'>
-              <a href='#'>About Me</a>
+              <a href='#biografia'>About Me</a>
             </li>
             <li className='hover:text-gray-500'>
-              <a href='#'>Services</a>
+              <a href='#habilidades'>Services</a>
             </li>
             <li className='hover:text-gray-500'>
-              <a href='#'>Works</a>
+              <a href='#experiencia'>Works</a>
             </li>
             <li className='hover:text-gray-500'>
-              <a href='#'>Contact</a>
+              <a href='#contato'>Contact</a>
             </li>
           </ul>
         )}
