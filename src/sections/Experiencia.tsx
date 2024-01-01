@@ -12,15 +12,18 @@ export default function Experience() {
             <div className="justify-center items-center flex mt-16 mb-10">
                 <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Experiencia</h1>
             </div>
-            <VerticalTimeline lineColor="">
+            <VerticalTimeline                     
+                animate={true} 
+                lineColor=""
+            >
                 {/* descricao de cursos */}
                 <VerticalTimelineElement
                     visible={true}
-                    className="vertical-timeline-element--work"
+                    className="vertical-timeline-element--education"
                     date="28/10/2021 - 17/10/2022"
                     icon={<PiCertificateFill/>}
                     contentStyle={{
-                        background: 'rgb(33, 150, 243)', color: '#fff',
+                        background: 'rgb(245,245,245)', color: '#000000',
                         boxShadow: "none",
                         border: "1px solid rgb(245, 245, 245)",
                         textAlign: "left",
@@ -34,7 +37,7 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="sm:text-lg lg:text-xl font-bold">Curso - Desenvolvedor de WebSite e Design Grafico</h1>
+                    <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Curso - Desenvolvedor de WebSite e Design Grafico</h1>
                     <p>
                         Neste periodo, iniciou meu grande interesse por tecnologia e querer entender mais sobre as complexidades deste universo. Cursei este curso e aprendi sobre: {"    "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 lg:text-lg">HTML,</span>
                         {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 lg:text-lg"> CSS</span>
@@ -45,11 +48,11 @@ export default function Experience() {
                 {/* descricao de trabalho */}
                 <VerticalTimelineElement
                     visible={true}
-                    className="vertical-timeline-element--work"
+                    className="vertical-timeline-element--education"
                     date="01/07/2022 - Presente"
                     icon={<MdWork />}
                     contentStyle={{
-                        background: 'rgb(33, 150, 243)', color: '#fff',
+                        background: 'rgb(245,245,245)', color: '#000000',
                         boxShadow: "none",
                         border: "1px solid rgb(245, 245, 245)",
                         textAlign: "left",
@@ -63,7 +66,7 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="sm:text-lg lg:text-xl font-bold">Desenvolvedor Full-Stack</h1>
+                    <h1 className="sm:text-lg lg:text-xl font-bold text-indigo-700">Desenvolvedor Full-Stack</h1>
                     <p>
                         Trabalhei na empresa DVR Industrial, empresa nacional responsavel por fabricar e monitorar os registros de placas veiculares mercosul. 
                         <br/> <br/>
@@ -76,11 +79,11 @@ export default function Experience() {
                 
                 <VerticalTimelineElement
                     visible={true}
-                    className="vertical-timeline-element--work"
+                    className="vertical-timeline-element--education"
                     date="09/07/2021"
                     icon={<AiFillCode/>}
                     contentStyle={{
-                        background: 'rgb(33, 150, 243)', color: '#fff',
+                        background: 'rgb(245,245,245)', color: '#000000',
                         boxShadow: "none",
                         border: "1px solid rgb(245, 245, 245)",
                         textAlign: "left",
@@ -94,7 +97,7 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="sm:text-lg lg:text-xl font-bold">Constante aprendizado</h1>
+                    <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Constante aprendizado</h1>
                     <p>
                         Agora estou me profissionalizando ainda mais, tendo como objetivo evoluir ainda mais minhas habilidades como full-stack. Para isto estou inicializando projetos pessoais e cursando novas tecnologias por meio da Alura.
                     </p>

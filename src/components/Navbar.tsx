@@ -49,9 +49,25 @@ export default function Navbar() {
 
   return (
     <nav className={navClasses}>
-      <div className="container mx-auto py-5 flex justify-between">
+      <div className="container mx-auto flex justify-between">
         <div className="flex items-center gap-2">
-          <span className="sm:text-lg lg:text-xl xl:text-2xl font-bold text-blue-900">Logo Company.</span>
+          {theme !== 'dark' ? (          
+            <Image 
+              width={80} 
+              height={80} 
+              src='/logos/my-logo-blue.svg' 
+              alt="Logo do site"
+              className='m-0'
+            />
+          ) : (
+            <Image 
+              width={80} 
+              height={80} 
+              src='/logos/my-logo-white.svg' 
+              alt="Logo do site"
+              className='m-0'
+            />
+          )}
         </div>
         <ul className='hidden md:flex items-center space-x-10 dark:text-white text-gray-700 font-bold text-sm uppercase'>
           <li className='hover:text-gray-500'>
