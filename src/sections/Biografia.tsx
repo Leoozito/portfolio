@@ -9,10 +9,10 @@ export default function Biografia() {
 
     return (
         <>
-            <div className="w-full flex items-center grid-cols-2 justify-center 2xl:mt-10">
-                <div className="flex flex-row mr-10">
+            <div className="w-full flex items-center xs:flex-col xs:grid-cols-1 grid-cols-2 justify-center 2xl:mt-10">
+                <div className="flex flex-row sm:mr-10">
                     <Image 
-                        className="shadow-2xl shadow-gray-800 relative rounded-2xl group object-contain" 
+                        className="shadow-2xl shadow-gray-800 relative rounded-2xl group object-contain xs:w-[180px] xs:justify-center xs:flex" 
                         width={400} 
                         height={0} 
                         src="/computer.jpeg" 
@@ -21,12 +21,12 @@ export default function Biografia() {
                 </div>
 
                 {/* parte direita com cards descritivos */}
-                <div className="w-1/2 flex flex-col gap-6 justify-between items-start">
-                    <div className="flex flex-row items-center lg:mt-10">
-                        <h1 className="sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]">
+                <div className="sm:w-1/2 xs:w-72 xs:56 flex flex-col gap-6 justify-between items-start">
+                    <div className="flex flex-row items-center lg:mt-10 xs:mt-8">
+                        <h1 className="xs:text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]">
                             Sobre mim
                         </h1>
-                        <span className="sm:inline-flex sm:w-[500px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] md:ml-4 2xl:ml-6"></span>
+                        <span className="sm:inline-flex xs:w-[200px] sm:w-[500px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] md:ml-4 2xl:ml-6"></span>
                     </div>
                     <motion.div 
                         whileHover={{ transform: "translateX(100px)" }}
@@ -37,7 +37,7 @@ export default function Biografia() {
                     >
                         <Card className="dark:bg-[#1e293b]">
 
-                                <p className="dark:text-white text-lg p-6 rounded-md">
+                                <p className="dark:text-white sm:text-lg p-6 rounded-md">
                                     Sou apaixonado por tecnologia e suas evoluções constante. Para mim, ter a sensação
                                     de finalmente descobrir uma solução para um problema {" "}<span className="font-bold text-indigo-700 dark:text-[#818cf8]">é algo  sensacional</span>.
                                 </p>
@@ -52,7 +52,7 @@ export default function Biografia() {
                         whileInView={{ opacity: 1 }}
                     >
                         <Card className="mt-2 dark:bg-[#1e293b]">
-                            <p className="dark:text-white text-lg p-6 rounded-md">
+                            <p className="dark:text-white sm:text-lg p-6 rounded-md">
                                 Meu interesse em programação surgiu em 2022, quando me surgiu uma oportunidade de estágio.
                                 Participei em diversos desenvolvimentos nesse periodo, e com muitos estudos e diversas praticas,
                                 me tornei  {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">especialista</span>{" "}
@@ -71,7 +71,7 @@ export default function Biografia() {
                         whileInView={{ opacity: 1 }}
                     >
                         <Card className="mt-2 dark:bg-[#1e293b]">
-                            <p className="dark:text-white text-lg p-6 rounded-md">
+                            <p className="dark:text-white sm:text-lg p-6 rounded-md">
                                 <span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">Minha stack principal </span>é
                                 {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 dark:text-[#818cf8]">React,</span>
                                 {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 dark:text-[#818cf8]">Tailwind CSS</span>
