@@ -85,7 +85,7 @@ export default function Navbar() {
             <FaBars size={24}  className='dark:text-white'/>
           </button>) : (
           <button onClick={alternarMenu} className='md:hidden cursor-pointer z-20'>
-            <VscError size={24} className='dark:text-white'/>
+            <VscError size={28} className='text-white'/>
           </button>
         )}
 

@@ -25,7 +25,7 @@ module.exports = withMT({
         "big":"48rem"
       },
       screens: {
-        'sm': '640px',
+        'sm': '340px',
         // => @media (min-width: 640px) { ... }
   
         'md': '768px',

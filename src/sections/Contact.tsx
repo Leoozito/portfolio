@@ -17,11 +17,11 @@ export default function Contact() {
                 <h1 className="uppercase text-3xl font-extrabold text-white">Contato</h1>
             </div>
             <div className="justify-center items-center flex mt-2 mb-20">
-                <span className="rounded-lg justify-center flex md:inline-flex md:w-[250px] h-[6px] bg-white ml-6"></span>
+                <span className="rounded-lg justify-center flex w-[250px] h-[6px] bg-white ml-6"></span>
             </div>      
 
             {/* recrutador enviar mensagem   */}
-            <div className="justify-center ml-60 mr-60 flex">
+            <div className="justify-center items-center 2xl:mx-60 flex">
                 <div className="justify-center grid grid-cols-1">
                     <div className="flex mb-8 gap-12">
                         <Input onChange={() => setNomeRecrutador} placeholder="Seu Nome" value={nomeRecrutador} className="items-center "/>

@@ -13,9 +13,9 @@ export default function Skills() {
             </div>
 
             {/* tecnologias */}
-            <div className="mt-12 justify-center flex gap-8">
+            <div className="mt-12 justify-center flex gap-8 flex-wrap">
                 <div
-                    className="h-24 w-24 justify-center flex rounded-full items-center bg-orange-200"
+                    className="2xl:h-24 w-24 justify-center flex rounded-full items-center bg-orange-200"
                 >
                     <Image
                         width={50} 
