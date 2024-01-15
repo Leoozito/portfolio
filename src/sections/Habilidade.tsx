@@ -56,7 +56,7 @@ export default function Skills() {
                         height={60} 
                         src="/img_tecnologies/javascript.png" 
                         alt="foto do icon html"
-                        className="xs:w-10 xs:h-10 sm:w-12 sm:h-12" 
+                        className="xs:w-10 xs:h-10 sm:w-14 sm:h-14" 
  
                     /> 
                 </div>

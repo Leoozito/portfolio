@@ -19,17 +19,17 @@ export default function Home() {
       </div>
 
       <div className='bg-indigo-200 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full'>
-        <div className='xs:my-10 my-20'>
+        <div className='xs:my-0 sm:my-10 my-20'>
           <section id="biografia">
             <Biografia/>
           </section>
         </div>
-        <div className='xs:my-10 my-20'>
+        <div className='my-20'>
           <section id="habilidades">
             <Habilidades/>
           </section>
         </div>
-        <div className='mb-40'>
+        <div className='my-20'>
           <section id="experiencia">
             <Experience/>
           </section>
