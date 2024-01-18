@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@gsebdev/react-simple-datepicker": "^1.0.21",
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
