@@ -17,7 +17,13 @@ export default function Contact() {
             email: emailRecrutador    
         }
 
-        emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams)
+        emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
+        .then((res) => {
+            console.log("Email enviado", res.status, res.text)
+        })
+        .catch((err) => {
+            console.log("ERRO", err)
+        })
     }
 
     return (
@@ -35,10 +41,10 @@ export default function Contact() {
                     <div className="justify-center grid grid-cols-1">
                         <div className="md:flex xs:grid sm:grid mb-8 gap-12">
                             <Input onChange={() => setNomeRecrutador} placeholder="Seu Nome" value={nomeRecrutador} className="items-center "/>
-                            <Input placeholder="Endereço de email" className="items-center"/>
+                            <Input onChange={() => setEmailRecrutador} value={emailRecrutador} placeholder="Endereço de email" className="items-center"/>
                         </div>
                         <div>
-                            <Textarea placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-72 md:h-96 md:w-80 mb-6 items-center "/>
+                            <Textarea onChange={() => setMensagem} value={mensagem} placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-72 md:h-96 md:w-80 mb-6 items-center "/>
 
                             <Button onClick={enviaEmail} className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48">Enviar</Button>
                         </div>
