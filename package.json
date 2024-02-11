@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@glidejs/glide": "^3.6.0",
     "@gsebdev/react-simple-datepicker": "^1.0.21",
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@types/file-saver": "^2.0.5",
+    "@types/glidejs__glide": "^3.6.5",
     "@types/js-cookie": "^3.0.3"
   }
 }
