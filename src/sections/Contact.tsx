@@ -35,22 +35,40 @@ export default function Contact() {
             <div className="justify-center items-center flex mt-2 xs:mb-10 md:mb-20">
                 <span className="rounded-lg justify-center flex w-[250px] h-[6px] bg-[#ffffff] ml-6"></span>
             </div>      
-            <form action="" onSubmit={enviaEmail}>
-                {/* recrutador enviar mensagem   */}
-                <div className="justify-center items-center xs:mx-0 2xl:mx-60 flex">
-                    <div className="justify-center grid grid-cols-1">
-                        <div className="md:flex xs:grid sm:grid mb-8 gap-12">
-                            <Input onChange={() => setNomeRecrutador} placeholder="Seu Nome" value={nomeRecrutador} className="items-center "/>
-                            <Input onChange={() => setEmailRecrutador} value={emailRecrutador} placeholder="Endereço de email" className="items-center"/>
+            <div className="justify-center items-center flex mx-20">
+                <Card className="p-10">
+                    <form action="" onSubmit={enviaEmail}>
+                        {/* recrutador enviar mensagem   */}
+                        <div className="justify-center items-center xs:mx-0 2xl:mx-60 flex">
+                            <div className="justify-center grid grid-cols-1">
+                                <div className="md:flex xs:grid sm:grid mb-8 gap-12">
+                                    <Input 
+                                        onChange={(e) => setNomeRecrutador(e.target.value)} 
+                                        placeholder="Seu Nome" 
+                                        value={nomeRecrutador} className="items-center "
+                                    />
+                                    <Input 
+                                        onChange={(e) => setEmailRecrutador(e.target.value)} 
+                                        value={emailRecrutador} placeholder="Endereço de email" className="items-center"
+                                    />
+                                </div>
+                                <div>
+                                    <Textarea 
+                                        onChange={(e) => setMensagem(e.target.value)} 
+                                        value={mensagem} 
+                                        placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-72 md:h-56 md:w-[600px] mb-6 items-center"
+                                    />
+                                    <Button
+                                        onClick={enviaEmail} className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48"
+                                    >
+                                        Enviar
+                                    </Button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <Textarea onChange={() => setMensagem} value={mensagem} placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-72 md:h-96 md:w-80 mb-6 items-center "/>
-
-                            <Button onClick={enviaEmail} className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48">Enviar</Button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+                    </form>
+                </Card>
+            </div>
         </>
     )
 }
