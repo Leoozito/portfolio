@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import Glide, { Anchors, Autoplay, Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
+import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
 
 const tecnologias = [
     {"name_tech": "HTML", "color_tech":"bg-orange-200", "img_tech": "/img_tecnologies/html.png", "size_img": 50, "alt_img": "Icone do HTML" },
@@ -33,17 +34,23 @@ const tecnologias = [
 export default function Skills() {
 
     const slider = new Glide('.glide', {
-        startAt: 0,
+        focusAt: "center",
+        perView: 6,
         autoplay: 2000,
         hoverpause: true,
-        perView: 6,
         peek: {
             before: 100,
             after: 0
         },
         breakpoints: {
             600: {
-                perView: 3,
+                perView: 2,
+            },
+            1000: {
+                perView: 4,
+            },
+            1200: {
+                perView: 6,
             }
         }      
       }
@@ -68,7 +75,7 @@ export default function Skills() {
             </div>
 
             {/* tecnologias */}
-            <div className="xs:mt-8 sm:mt-12 justify-center flex xs:gap-12 gap-8 flex-wrap">
+            <div className="xs:my-8 sm:my-12 justify-center flex xs:gap-12 gap-8 flex-wrap px-10 pt-10 mx-40 xs:mx-20">
                 <div className="glide">
                     <div className="glide__track" data-glide-el="track">
                         <ul className="glide__slides">
@@ -88,24 +95,38 @@ export default function Skills() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
-                </div>
 
-                <div className="glide">
-                    <div className="glide__arrows" data-glide-el="controls">
-                        <button className="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
-                        <button className="glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
-                    </div>
+                        <div 
+                            className="glide__bullets" 
+                            data-glide-el="controls[nav]"
+                        >
+                            {tecnologias.map((tecnologia, index) => (
+                                <button 
+                                    className="glide__bullet" 
+                                    data-glide-dir={`=${index + 1}`} 
+                                    onClick={() => slider.go(`=${index + 1}`)}
+                                />
+                            ))}
+                        </div>
 
-                    <div className="glide__bullets" data-glide-el="controls[nav]">
-                        {tecnologias.map((tecnologia, index) => (
+                        <div 
+                            className="glide__arrows mt-32 sm:mt-60" data-glide-el="controls"
+                        >
                             <button 
-                                key={index} 
-                                className="glide__bullet" 
-                                data-glide-dir={`=${index}`} 
-                                onClick={() => slider.go(`=${index}`)}
-                            />
-                        ))}
+                                className="glide__arrow glide__arrow--prev glide__arrow--left left-4" 
+                                data-glide-dir="<"
+                            >
+                                <HiArrowSmLeft className="xs:text-xl sm:text-2xl lg:text-4xl"/>
+                            </button>
+
+                            <button 
+                                className="glide__arrow glide__arrow--next glide__arrow--right right-4" 
+                                data-glide-dir=">"
+                            >
+                                <HiArrowSmRight className="xs:text-xl sm:text-2xl lg:text-4xl"/>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>

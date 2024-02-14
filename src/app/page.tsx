@@ -24,12 +24,12 @@ export default function Home() {
             <Biografia/>
           </section>
         </div>
-        <div className='my-40'>
+        <div className='mt-32'>
           <section id="habilidades">
             <Habilidades/>
           </section>
         </div>
-        <div className='my-60 mx-20'>
+        <div className='mx-20'>
           <section id="experiencia">
             <Experience/>
           </section>
