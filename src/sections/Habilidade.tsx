@@ -4,7 +4,7 @@ import { Card } from "@material-tailwind/react"
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 //import Glide from "@glidejs/glide"
-import Glide, { Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
+import Glide, { Anchors, Autoplay, Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 
@@ -33,26 +33,33 @@ const tecnologias = [
 export default function Skills() {
 
     const slider = new Glide('.glide', {
-        gap: 20,
-        perView: 6,
         startAt: 0,
         autoplay: 2000,
         hoverpause: true,
+        perView: 6,
         peek: {
             before: 100,
-            after: 100
+            after: 0
+        },
+        breakpoints: {
+            600: {
+                perView: 3,
+            }
         }      
       }
     );
 
     useEffect(() => {
       const foo = async () => {
-        slider.mount({Autoplay})
+        slider.mount({Anchors, Autoplay, Controls, Breakpoints})
       } 
 
       foo()
+
     }, [slider])
 
+
+    
     return (
         <>
             {/* titulo */}
@@ -61,7 +68,7 @@ export default function Skills() {
             </div>
 
             {/* tecnologias */}
-            <div className="xs:mt-8 sm:mt-12 justify-center flex gap-8 flex-wrap">
+            <div className="xs:mt-8 sm:mt-12 justify-center flex xs:gap-12 gap-8 flex-wrap">
                 <div className="glide">
                     <div className="glide__track" data-glide-el="track">
                         <ul className="glide__slides">
@@ -81,6 +88,24 @@ export default function Skills() {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                </div>
+
+                <div className="glide">
+                    <div className="glide__arrows" data-glide-el="controls">
+                        <button className="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+                        <button className="glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
+                    </div>
+
+                    <div className="glide__bullets" data-glide-el="controls[nav]">
+                        {tecnologias.map((tecnologia, index) => (
+                            <button 
+                                key={index} 
+                                className="glide__bullet" 
+                                data-glide-dir={`=${index}`} 
+                                onClick={() => slider.go(`=${index}`)}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

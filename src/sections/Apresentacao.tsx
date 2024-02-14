@@ -20,7 +20,7 @@ export default function Apresentacao() {
 
         <h1 className="xs:text-sm sm:text-xl lg:text-2xl 2xl:text-3xl font-bold text-indigo-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#eef2ff] dark:via-[#7dd3fc] dark:to-[#eef2ff]">Olá, Me chamo Leonardo</h1>
         <p className="dark:text-white xs:text-xs sm:text-md lg:text-lg xl:text-xl">Interessado em trabalhar ao lado de uma pessoa que esteja empolgado com novos desafios, e que tenha comprometimento e criatividade?</p>
-        <a className="bg-indigo-600 text-white xs:text-xs sm:text-sm xl:text-xl sm:px-2 xs:p-1 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold w-fit sm:mt-1.5 lg:mt-0" href="#">Contate-Me</a>
+        <a className="bg-indigo-600 text-white xs:text-xs sm:text-sm xl:text-xl sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold w-fit xs:mt-2 sm:mt-1.5 lg:mt-0" href="#">Contate-Me</a>
 
       </div>
     </>
