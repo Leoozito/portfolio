@@ -75,9 +75,9 @@ export default function Skills() {
             </div>
 
             {/* tecnologias */}
-            <div className="xs:my-8 sm:my-12 justify-center flex xs:gap-12 gap-8 flex-wrap px-10 pt-10 mx-40 xs:mx-20">
+            <div className="xs:my-8 sm:my-12 justify-center flex xs:gap-12 gap-8 flex-wrap px-10 pt-10">
                 <div className="glide">
-                    <div className="glide__track" data-glide-el="track">
+                    <div className="glide__track mx-40 xs:mx-6" data-glide-el="track">
                         <ul className="glide__slides">
                             {tecnologias.map((tecnologia, index) => (
                                 <li key={index} className="glide__slide">
@@ -110,10 +110,10 @@ export default function Skills() {
                         </div>
 
                         <div 
-                            className="glide__arrows mt-32 sm:mt-60" data-glide-el="controls"
+                            className="glide__arrows mt-32" data-glide-el="controls"
                         >
                             <button 
-                                className="glide__arrow glide__arrow--prev glide__arrow--left left-4" 
+                                className="glide__arrow glide__arrow--prev glide__arrow--left" 
                                 data-glide-dir="<"
                             >
                                 <HiArrowSmLeft className="xs:text-xl sm:text-2xl lg:text-4xl"/>
