@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { Card } from "@material-tailwind/react"
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useMemo } from "react";
 //import Glide from "@glidejs/glide"
 import Glide, { Anchors, Autoplay, Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 import '@glidejs/glide/dist/css/glide.core.min.css';
@@ -33,37 +33,36 @@ const tecnologias = [
 
 export default function Skills() {
 
-    const slider = new Glide('.glide', {
-        focusAt: "center",
-        perView: 3,
-        autoplay: 2000,
-        hoverpause: true,
-        peek: {
-            before: 100,
-            after: 0
-        },
-        breakpoints: {
-            600: {
-                perView: 2,
+    const slider = useMemo(() => {
+        return new Glide('.glide', {
+            focusAt: "center",
+            perView: 3,
+            autoplay: 2000,
+            hoverpause: true,
+            peek: {
+                before: 100,
+                after: 0
             },
-            1000: {
-                perView: 4,
-            },
-            1200: {
-                perView: 6,
+            breakpoints: {
+                600: {
+                    perView: 2,
+                },
+                1000: {
+                    perView: 4,
+                },
+                1200: {
+                    perView: 6,
+                }
             }
-        }      
-      }
-    );
+        });
+    }, []);
 
     useEffect(() => {
-      const foo = async () => {
-        slider.mount({Anchors, Autoplay, Controls, Breakpoints})
-      } 
-
-      foo()
-
-    }, [slider])
+        const foo = async () => {
+            await slider.mount({ Anchors, Autoplay, Controls, Breakpoints });
+        };
+        foo();
+    }, [slider]);
 
 
     
@@ -127,6 +126,7 @@ export default function Skills() {
                     >
                         {tecnologias.map((tecnologia, index) => (
                             <button 
+                                key={index}
                                 className="glide__bullet" 
                                 data-glide-dir={`=${index + 1}`} 
                                 onClick={() => slider.go(`=${index + 1}`)}
