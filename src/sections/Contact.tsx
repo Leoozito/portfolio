@@ -39,11 +39,11 @@ export default function Contact() {
             </div>      
 
             <div className="xs:relative justify-center xs:grid xs:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 sm:flex sm:mx-40 sm:p-10 mt-20 sm:gap-x-12 xs:gap-y-12">
-                <div className="xs:relative xs:grid-cols-1 sm:grid-cols-2 xs:flex-row sm:flex-col flex justify-center items-center w-2/6">
-                    <Typography className="xs:absolute xs:top-0 sm:top-16 flex justify-center items-center text-white font-extrabold xs:text-xl sm:text-2xl xs:left-20">
+                <div className="relative xs:grid-cols-1 sm:grid-cols-2 xs:flex-row sm:flex-col flex justify-center items-center w-2/6">
+                    <Typography className="absolute xs:top-0 top-10 sm:-left-16 flex justify-center items-center text-white font-extrabold xs:text-xl sm:text-2xl xs:left-20">
                         Estou empolgado para trabalhar com você !
                     </Typography>
-                    <div className="xs:absolute xs:w-72 sm:w-80 lg:-left-16 sm:right-0 xs:top-14 xs:left-60 flex justify-center items-center bottom-16">
+                    <div className="absolute xs:w-72 sm:w-80 sm:-left-24 xs:top-14 xs:left-60 flex justify-center items-center bottom-16">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"

@@ -12,9 +12,11 @@ export default function Home() {
     <>
       <div className='z-96 overflow-hidden w-full'><Navbar/></div>
       
-      <div className="dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 h-screen overflow-hidden w-full">
+      <div className="xs:h-[650px] h-[650px] xs:relative dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 overflow-hidden w-full">
           <section id="apresentacao">
-            <Apresentacao/>
+            <div className=''>
+              <Apresentacao/>
+            </div>
           </section>
       </div>
 
