@@ -43,7 +43,7 @@ export default function Contact() {
                     <Typography className="absolute xs:top-0 top-10 sm:-left-16 flex justify-center items-center text-white font-extrabold xs:text-xl sm:text-2xl xs:left-20">
                         Estou empolgado para trabalhar com você !
                     </Typography>
-                    <div className="absolute xs:w-60 sm:w-80 sm:-left-24 xs:top-14 xs:left-[270px] flex justify-center items-center bottom-16">
+                    <div className="absolute xs:w-60 sm:w-80 xs:top-14 xs:left-[270px] sm:top-14 sm:-left-24 flex justify-center items-center bottom-16">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
@@ -54,11 +54,11 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="xs:relative xs:-bottom-40 xs:left-20 w-3/4 justify-center items-center flex">
+                <div className="relative xs:-bottom-40 xs:left-20 sm:-bottom-40 sm:left-20 w-3/4 justify-center items-center flex">
                     <Card className="w-full p-10 items-center">
                         <form action="" onSubmit={enviaEmail}>
                             {/* recrutador enviar mensagem   */}
-                            <div className="justify-center items-center xs:mx-0 2xl:mx-60 flex">
+                            <div className="justify-center items-center xs:mx-0 sm:mx-10 2xl:mx-60 flex">
                                 <div className="justify-center grid grid-cols-1">
                                     <div className="md:flex grid mb-8 sm:gap-12 xs:gap-6">
                                         <Input

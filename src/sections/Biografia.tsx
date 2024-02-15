@@ -9,10 +9,10 @@ export default function Biografia() {
 
     return (
         <>
-            <div className="w-full flex items-center xs:flex-col xs:grid-cols-1 grid-cols-2 justify-center 2xl:mt-10">
+            <div className="w-full flex items-center xs:flex-col sm:flex-col xs:grid-cols-1 justify-center 2xl:mt-10 md:px-20 sm:grid-cols-1 md:grid-cols-2">
                 <div className="flex flex-row sm:mr-10">
                     <Image 
-                        className="shadow-2xl shadow-gray-800 relative rounded-2xl group object-contain xs:w-[180px] xs:justify-center xs:flex" 
+                        className="shadow-2xl shadow-gray-800 relative rounded-2xl group object-contain xs:w-[180px] sm:w-[280px] xs:justify-center xs:flex" 
                         width={400} 
                         height={0} 
                         src="/computer.jpeg" 
@@ -21,12 +21,12 @@ export default function Biografia() {
                 </div>
 
                 {/* parte direita com cards descritivos */}
-                <div className="sm:w-1/2 xs:w-96 xs:56 flex flex-col gap-6 justify-between items-start">
-                    <div className="flex flex-row items-center lg:mt-10 xs:mt-12">
+                <div className="sm:w-1/2 xs:w-96 sm:w-[420px] flex flex-col gap-6 justify-between items-start">
+                    <div className="flex flex-row items-center lg:mt-10 xs:mt-12 sm:mt-14">
                         <h1 className="xs:text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]">
                             Sobre mim
                         </h1>
-                        <span className="sm:inline-flex xs:w-[250px] sm:w-[500px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] xs:ml-4 md:ml-4 2xl:ml-6"></span>
+                        <span className="sm:inline-flex xs:w-[250px] sm:w-[350px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] xs:ml-4 sm:ml-3 md:ml-4 2xl:ml-6"></span>
                     </div>
                     <motion.div 
                         whileHover={{ transform: "translateX(100px)" }}
