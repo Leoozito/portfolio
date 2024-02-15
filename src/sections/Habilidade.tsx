@@ -100,7 +100,7 @@ export default function Skills() {
                     </ul>
 
                     <div 
-                        className="glide__arrows xs:mt-20 sm:mt-16" data-glide-el="controls"
+                        className="glide__arrows xs:mt-28 sm:mt-16" data-glide-el="controls"
                     >
                         <button 
                             className="glide__arrow glide__arrow--prev glide__arrow--left" 
@@ -112,7 +112,7 @@ export default function Skills() {
                         </button>
 
                         <button 
-                            className="glide__arrow glide__arrow--next glide__arrow--right" 
+                            className="glide__arrow glide__arrow--next glide__arrow--right hover:shadow-2xl" 
                             data-glide-dir=">"
                         >
                             <HiArrowSmRight 

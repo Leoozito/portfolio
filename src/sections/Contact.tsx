@@ -43,7 +43,7 @@ export default function Contact() {
                     <Typography className="absolute xs:top-0 top-10 sm:-left-16 flex justify-center items-center text-white font-extrabold xs:text-xl sm:text-2xl xs:left-20">
                         Estou empolgado para trabalhar com você !
                     </Typography>
-                    <div className="absolute xs:w-72 sm:w-80 sm:-left-24 xs:top-14 xs:left-60 flex justify-center items-center bottom-16">
+                    <div className="absolute xs:w-60 sm:w-80 sm:-left-24 xs:top-14 xs:left-[270px] flex justify-center items-center bottom-16">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"

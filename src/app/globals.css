@@ -19,6 +19,25 @@ html {
   align-items: center;
 }
 
+.glide__arrow {
+  background-color: #312e81 !important;
+  border-radius: 16px !important;
+  color: #ffffff !important;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25) !important;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+  --tw-shadow-color: #212121 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.glide__arrow:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #ffffff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
