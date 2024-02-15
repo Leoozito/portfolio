@@ -35,7 +35,7 @@ export default function Skills() {
 
     const slider = new Glide('.glide', {
         focusAt: "center",
-        perView: 6,
+        perView: 3,
         autoplay: 2000,
         hoverpause: true,
         peek: {
@@ -71,63 +71,69 @@ export default function Skills() {
         <>
             {/* titulo */}
             <div className="justify-center items-center flex">
-                <h1 className="xs:text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Habilidades</h1>
+                <h1 
+                    className="xs:text-2xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]"
+                >Habilidades</h1>
             </div>
 
             {/* tecnologias */}
-            <div className="xs:my-8 sm:my-12 justify-center flex xs:gap-12 gap-8 flex-wrap px-10 pt-10">
-                <div className="glide">
-                    <div className="glide__track mx-40 xs:mx-6" data-glide-el="track">
-                        <ul className="glide__slides">
-                            {tecnologias.map((tecnologia, index) => (
-                                <li key={index} className="glide__slide">
-                                    <div 
-                                        className={`xs:h-16 xs:w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 justify-center flex rounded-full items-center ${tecnologia.color_tech}`}
-                                    >
-                                        <Image
-                                            width={tecnologia.size_img}
-                                            height={tecnologia.size_img}
-                                            src={tecnologia.img_tech}
-                                            alt={tecnologia.alt_img}
-                                            className="xs:w-10 xs:h-10 sm:w-12 sm:h-12"
-                                        />
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
+            <div className="glide mt-20">
+                <div 
+                    className="glide__track xs:my-8 sm:my-12 mx-40 xs:mx-6" data-glide-el="track"
+                >
+                    <ul className="glide__slides">
+                        {tecnologias.map((tecnologia, index) => (
+                            <li key={index} className="glide__slide">
+                                <div 
+                                    className={`xs:h-16 xs:w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 justify-center flex rounded-full items-center ${tecnologia.color_tech}`}
+                                >
+                                    <Image
+                                        width={tecnologia.size_img}
+                                        height={tecnologia.size_img}
+                                        src={tecnologia.img_tech}
+                                        alt={tecnologia.alt_img}
+                                        className="xs:w-10 xs:h-10 sm:w-12 sm:h-12"
+                                    />
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
 
-                        <div 
-                            className="glide__bullets" 
-                            data-glide-el="controls[nav]"
+                    <div 
+                        className="glide__arrows xs:mt-20 sm:mt-16" data-glide-el="controls"
+                    >
+                        <button 
+                            className="glide__arrow glide__arrow--prev glide__arrow--left" 
+                            data-glide-dir="<"
                         >
-                            {tecnologias.map((tecnologia, index) => (
-                                <button 
-                                    className="glide__bullet" 
-                                    data-glide-dir={`=${index + 1}`} 
-                                    onClick={() => slider.go(`=${index + 1}`)}
-                                />
-                            ))}
-                        </div>
+                            <HiArrowSmLeft 
+                                className="xs:text-xl sm:text-2xl lg:text-4xl"
+                            />
+                        </button>
 
-                        <div 
-                            className="glide__arrows mt-32" data-glide-el="controls"
+                        <button 
+                            className="glide__arrow glide__arrow--next glide__arrow--right" 
+                            data-glide-dir=">"
                         >
-                            <button 
-                                className="glide__arrow glide__arrow--prev glide__arrow--left" 
-                                data-glide-dir="<"
-                            >
-                                <HiArrowSmLeft className="xs:text-xl sm:text-2xl lg:text-4xl"/>
-                            </button>
-
-                            <button 
-                                className="glide__arrow glide__arrow--next glide__arrow--right right-4" 
-                                data-glide-dir=">"
-                            >
-                                <HiArrowSmRight className="xs:text-xl sm:text-2xl lg:text-4xl"/>
-                            </button>
-                        </div>
-
+                            <HiArrowSmRight 
+                                className="xs:text-xl sm:text-2xl lg:text-4xl"
+                            />
+                        </button>
                     </div>
+
+                    <div 
+                        className="glide__bullets" 
+                        data-glide-el="controls[nav]"
+                    >
+                        {tecnologias.map((tecnologia, index) => (
+                            <button 
+                                className="glide__bullet" 
+                                data-glide-dir={`=${index + 1}`} 
+                                onClick={() => slider.go(`=${index + 1}`)}
+                            />
+                        ))}
+                    </div>
+
                 </div>
             </div>
         </>
