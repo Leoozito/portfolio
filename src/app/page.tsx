@@ -31,7 +31,7 @@ export default function Home() {
             <Habilidades/>
           </section>
         </div>
-        <div className='xs:mx-2 sm:mx-8'>
+        <div className='xs:mx-2 sm:mx-8 md:mx-12 lg:mx-20 xl:mx-32 md:mt-10'>
           <section id="experiencia">
             <Experience/>
           </section>

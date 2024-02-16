@@ -47,8 +47,8 @@ export default function Skills() {
                 1000: {
                     perView: 3,
                 },
-                1200: {
-                    perView: 3,
+                1800: {
+                    perView: 4,
                 }
             }
         });
@@ -75,7 +75,7 @@ export default function Skills() {
             {/* tecnologias */}
             <div className="glide mt-20">
                 <div 
-                    className="glide__track xs:my-8 sm:my-12 lg:mx-40 sm:mx-10 xs:mx-6" data-glide-el="track"
+                    className="glide__track xs:my-8 sm:my-12 lg:mx-20 sm:mx-10 xs:mx-6" data-glide-el="track"
                 >
                     <ul className="glide__slides">
                         {tecnologias.map((tecnologia, index) => (
@@ -96,7 +96,7 @@ export default function Skills() {
                     </ul>
 
                     <div 
-                        className="glide__arrows xs:mt-32 sm:mt-32" data-glide-el="controls"
+                        className="glide__arrows xs:mt-32 sm:mt-32 md:mt-48" data-glide-el="controls"
                     >
                         <button 
                             className="glide__arrow glide__arrow--prev glide__arrow--left" 

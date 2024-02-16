@@ -42,11 +42,11 @@ export default function Contact() {
                 
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 xs:flex-row sm:flex-row md:flex-col xs:flex sm:flex justify-center items-center">
 
-                    <Typography className="absolute xs:top-0 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-14 md:1/4">
+                    <Typography className="absolute xs:top-0 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[350px] lg:-left-0">
                         Estou empolgado para trabalhar com você !
                     </Typography>
 
-                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-80 xs:top-14 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40">
+                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-72 xs:top-14 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
@@ -57,7 +57,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="relative justify-center items-center flex shadow-2xl shadow-indigo-200 xs:-bottom-40 xs:left-0 sm:-bottom-24 sm:right-40 md:-top-12 md:-right-32 xs:w-[350px] sm:w-[550px]">
+                <div className="relative justify-center items-center flex shadow-2xl shadow-indigo-200 xs:-bottom-40 xs:left-0 sm:-bottom-24 sm:right-40 md:-top-6 md:-right-32 xs:w-[350px] sm:w-[550px] lg:w-[600px]">
                     <Card className="w-full xs:p-10 items-center">
                         <form action="" onSubmit={enviaEmail}>
                             {/* recrutador enviar mensagem   */}
