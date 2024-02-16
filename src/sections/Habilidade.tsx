@@ -96,7 +96,7 @@ export default function Skills() {
                     </ul>
 
                     <div 
-                        className="glide__arrows xs:mt-32 sm:mt-16" data-glide-el="controls"
+                        className="glide__arrows xs:mt-32 sm:mt-32" data-glide-el="controls"
                     >
                         <button 
                             className="glide__arrow glide__arrow--prev glide__arrow--left" 

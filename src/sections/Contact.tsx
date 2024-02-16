@@ -31,21 +31,21 @@ export default function Contact() {
     return (
         <>
             {/* titulo */}
-            <div className="justify-center items-center flex xs:mt-6 md:mt-16">
+            <div className="justify-center items-center flex xs:mt-6 sm:mt-10 md:mt-16">
                 <h1 className="uppercase xs:text-lg sm:text-xl xl:text-2xl 2xl:text-3xl font-extrabold text-white">Contato</h1>
             </div>
             <div className="justify-center items-center flex mt-2 xs:mb-10 md:mb-20">
                 <span className="rounded-lg justify-center flex w-[250px] h-[6px] bg-[#ffffff] ml-6"></span>
             </div>      
 
-            <div className="xs:relative justify-center xs:grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 sm:grid md:flex sm:mx-40 sm:p-10 mt-20 sm:gap-x-12 xs:gap-y-4">
+            <div className="xs:relative justify-center xs:grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 sm:grid md:flex sm:mx-40 sm:p-10 mt-20 sm:gap-x-12 xs:gap-y-4 sm:gap-y-8">
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xs:flex-row sm:flex-row md:flex-row flex justify-center items-center w-2/6">
 
-                    <Typography className="absolute xs:top-0 sm:xs:top-0 md:top-10 md:-left-16 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xs:left-6 sm:left-20">
+                    <Typography className="absolute xs:top-0 sm:xs:top-0 md:top-10 md:-right-16 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xs:left-6 sm:right-24">
                         Estou empolgado para trabalhar com você !
                     </Typography>
 
-                    <div className="absolute xs:w-40 sm:w-60 md:w-80 xs:top-14 xs:left-[166px] sm:top-14 sm:left-[270px] md:top-14 md:-left-24 flex justify-center items-center bottom-16">
+                    <div className="absolute xs:w-40 sm:w-60 md:w-80 xs:top-14 xs:left-[166px] sm:-bottom-24 sm:left-24 md:top-14 md:-left-24 flex justify-center items-center bottom-16">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
@@ -56,13 +56,13 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="relative xs:-bottom-40 xs:left-0 sm:-bottom-40 sm:left-20 xs:w-[350px] sm:w-3/4 justify-center items-center flex shadow-2xl shadow-indigo-200">
-                    <Card className="w-full p-10 items-center">
+                <div className="relative xs:-bottom-40 xs:left-0 sm:-bottom-24 sm:right-40 xs:w-[350px] sm:w-[550px] md:w-3/4 justify-center items-center flex shadow-2xl shadow-indigo-200">
+                    <Card className="w-full xs:p-10 items-center">
                         <form action="" onSubmit={enviaEmail}>
                             {/* recrutador enviar mensagem   */}
-                            <div className="justify-center items-center xs:mx-0 sm:mx-10 2xl:mx-60 flex">
+                            <div className="justify-center items-center xs:mx-0 2xl:mx-60 flex sm:p-8">
                                 <div className="justify-center grid grid-cols-1">
-                                    <div className="md:flex grid mb-8 sm:gap-12 xs:gap-6">
+                                    <div className="sm:flex grid mb-8 sm:gap-12 xs:gap-6">
                                         <Input
                                             onChange={(e) => setNomeRecrutador(e.target.value)}
                                             placeholder="Seu Nome"
@@ -77,7 +77,7 @@ export default function Contact() {
                                         <Textarea
                                             onChange={(e) => setMensagem(e.target.value)}
                                             value={mensagem}
-                                            placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-72 md:h-56 md:w-full mb-6 items-center"
+                                            placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-full md:h-56 md:w-full mb-6 items-center"
                                         />
                                         <Button
                                             onClick={enviaEmail} className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48"
