@@ -5,12 +5,13 @@ export default function Projects() {
     return (
         <>
             <div className="my-6 justify-center items-center flex mt-16 mb-10">
-                <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">Projetos</h1>
+                <h1 className="text-4xl font-extrabold text-indigo-900 dark:text-[#818cf8]">ProSHjetos</h1>
             </div>
-            {/* <Card 
-                className="justify-center w-auto h-96 ml-60 mr-60 flex dark:bg-[#1e293b]"
-            >
-            </Card> */}
+            <div className="w-full relative">
+                <div className="w-96 justify-center items-center flex absolute bg-blue-300">
+                    <h1>HELLO WORLD</h1>
+                </div>
+            </div>
         </>
     )
 }

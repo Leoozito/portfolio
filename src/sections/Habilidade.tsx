@@ -36,7 +36,7 @@ export default function Skills() {
     const slider = useMemo(() => {
         return new Glide('.glide', {
             focusAt: "center",
-            perView: 3,
+            perView: 4,
             autoplay: 2000,
             hoverpause: true,
             peek: {
@@ -44,14 +44,11 @@ export default function Skills() {
                 after: 0
             },
             breakpoints: {
-                600: {
-                    perView: 2,
-                },
                 1000: {
-                    perView: 4,
+                    perView: 3,
                 },
                 1200: {
-                    perView: 6,
+                    perView: 3,
                 }
             }
         });
@@ -71,7 +68,7 @@ export default function Skills() {
             {/* titulo */}
             <div className="justify-center items-center flex">
                 <h1 
-                    className="xs:text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]"
+                    className="xs:text-3xl sm:text-3xl xl:text-4xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]"
                 >Habilidades</h1>
             </div>
 
@@ -84,7 +81,7 @@ export default function Skills() {
                         {tecnologias.map((tecnologia, index) => (
                             <li key={index} className="glide__slide">
                                 <div 
-                                    className={`xs:h-16 xs:w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 justify-center flex rounded-full items-center ${tecnologia.color_tech}`}
+                                    className={`xs:h-16 xs:w-16 sm:h-16 sm:w-16 md:h-24 md:w-24 justify-center flex rounded-full items-center ${tecnologia.color_tech}`}
                                 >
                                     <Image
                                         width={tecnologia.size_img}
@@ -99,7 +96,7 @@ export default function Skills() {
                     </ul>
 
                     <div 
-                        className="glide__arrows xs:mt-28 sm:mt-16" data-glide-el="controls"
+                        className="glide__arrows xs:mt-32 sm:mt-16" data-glide-el="controls"
                     >
                         <button 
                             className="glide__arrow glide__arrow--prev glide__arrow--left" 

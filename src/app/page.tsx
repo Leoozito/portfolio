@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className='z-96 overflow-hidden w-full'><Navbar/></div>
       
-      <div className="xs:h-[650px] h-[650px] xs:relative dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 overflow-hidden w-full">
+      <div className="xs:h-[680px] h-[650px] xs:relative dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 overflow-hidden w-full dark:-z-40">
           <section id="apresentacao">
             <div className=''>
               <Apresentacao/>
@@ -21,17 +21,17 @@ export default function Home() {
       </div>
 
       <div className='bg-indigo-200 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full'>
-        <div className='xs:my-0 sm:my-40'>
+        <div className='sm:my-40'>
           <section id="biografia">
             <Biografia/>
           </section>
         </div>
-        <div className='mt-32 xs:mx-10 sm:mx-32'>
+        <div className='mt-32 xs:mx-2 sm:mx-12'>
           <section id="habilidades">
             <Habilidades/>
           </section>
         </div>
-        <div className='xs:mx-20 sm:mx-36'>
+        <div className='xs:mx-2 sm:mx-36'>
           <section id="experiencia">
             <Experience/>
           </section>

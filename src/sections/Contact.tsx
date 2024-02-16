@@ -38,12 +38,14 @@ export default function Contact() {
                 <span className="rounded-lg justify-center flex w-[250px] h-[6px] bg-[#ffffff] ml-6"></span>
             </div>      
 
-            <div className="xs:relative justify-center xs:grid xs:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 sm:flex sm:mx-40 sm:p-10 mt-20 sm:gap-x-12 xs:gap-y-12">
-                <div className="relative xs:grid-cols-1 sm:grid-cols-2 xs:flex-row sm:flex-col flex justify-center items-center w-2/6">
-                    <Typography className="absolute xs:top-0 top-10 sm:-left-16 flex justify-center items-center text-white font-extrabold xs:text-xl sm:text-2xl xs:left-20">
+            <div className="xs:relative justify-center xs:grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 sm:grid md:flex sm:mx-40 sm:p-10 mt-20 sm:gap-x-12 xs:gap-y-4">
+                <div className="relative xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xs:flex-row sm:flex-row md:flex-row flex justify-center items-center w-2/6">
+
+                    <Typography className="absolute xs:top-0 sm:xs:top-0 md:top-10 md:-left-16 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xs:left-6 sm:left-20">
                         Estou empolgado para trabalhar com você !
                     </Typography>
-                    <div className="absolute xs:w-60 sm:w-80 xs:top-14 xs:left-[270px] sm:top-14 sm:-left-24 flex justify-center items-center bottom-16">
+
+                    <div className="absolute xs:w-40 sm:w-60 md:w-80 xs:top-14 xs:left-[166px] sm:top-14 sm:left-[270px] md:top-14 md:-left-24 flex justify-center items-center bottom-16">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
@@ -54,7 +56,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="relative xs:-bottom-40 xs:left-20 sm:-bottom-40 sm:left-20 w-3/4 justify-center items-center flex">
+                <div className="relative xs:-bottom-40 xs:left-0 sm:-bottom-40 sm:left-20 xs:w-[350px] sm:w-3/4 justify-center items-center flex shadow-2xl shadow-indigo-200">
                     <Card className="w-full p-10 items-center">
                         <form action="" onSubmit={enviaEmail}>
                             {/* recrutador enviar mensagem   */}
