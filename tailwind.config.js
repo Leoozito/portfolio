@@ -28,16 +28,16 @@ module.exports = withMT({
         'xs':  {'min': '340px', 'max': '639px'},
         // => @media (min-width: 340px) { ... }
 
-        'sm': '640px',
+        'sm': {'min': '640px', 'max': '767px'},
         // => @media (min-width: 640px) { ... }
   
-        'md': '768px',
+        'md': {'min': '768px', 'max': '1023px'},
         // => @media (min-width: 768px) { ... }
   
-        'lg': '1024px',
+        'lg': {'min': '1024px', 'max': '1279px'},
         // => @media (min-width: 1024px) { ... }
   
-        'xl': '1280px',
+        'xl': {'min': '1280px', 'max': '1535px'},
         // => @media (min-width: 1280px) { ... }
   
         '2xl': '1536px',
