@@ -6,11 +6,11 @@ export default function Apresentacao() {
 
   return(
     <>
-      <Image width={400} height={400} className="items-center block absolute dark:absolute mx-auto 2xl:bottom-0 xs:top-20 sm:top-36 md:-bottom-20 right-0 xs:left-6 sm:left-12 lg:block sm:mt-6 lg:h-5/6 object-cover xs:p-16 sm:p-14 2xl:p-0 xs:w-[400px] sm:w-[560px] sm:h-[560px] lg:w-[760px]" src='/my-picture.png' alt="Minha foto perfil"/>
+      <Image width={400} height={400} className="items-center block absolute dark:absolute mx-auto 2xl:bottom-0 xs:top-20 sm:top-36 md:-bottom-20 right-0 xs:left-6 sm:left-12 lg:block sm:mt-6 lg:h-5/6 object-cover xs:p-16 sm:p-14 2xl:p-0 xs:w-[400px] sm:w-[560px] sm:h-[560px] md:w-[760px]" src='/my-picture.png' alt="Minha foto perfil"/>
       
       <div className="lg:-bottom-1/12 xs:top-12 left-0 mx-auto 2xl:w-big 2xl:h-big xs:w-[260px] xs:h-[260px] sm:w-[460px] sm:h-[460px] bg-indigo-900 rounded-full -z-10 right-0 xs:mt-28 sm:mt-40 dark:bg-gradient-to-b dark:from-indigo-50 dark:via-indigo-300 dark:to-indigo-900 absolute"></div>
       
-      <div className="items-center absolute lg:top-1/3 left-5 sm:left-10 xs:text-2xl xs:left-12 sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl lg:left-5 xl:left-48 font-bold xs:top-24 sm:top-36">
+      <div className="items-center absolute lg:top-1/3 left-5 sm:left-10 xs:text-2xl xs:left-12 sm:text-3xl md:text-3xl lg:text-5xl xl:text-4xl 2xl:text-5xl lg:left-5 xl:left-48 font-bold xs:top-24 sm:top-36">
         <p className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-800 to-gray-400 dark:from-white dark:via-blue-gray-300 dark:to-white">Desenvolvedor</p>
 
         <p className="font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-indigo-900 to-indigo-500 dark:from-blue-gray-600 dark:via-white dark:to-white">Full-Stack</p>

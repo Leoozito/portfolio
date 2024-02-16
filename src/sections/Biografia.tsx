@@ -9,8 +9,8 @@ export default function Biografia() {
 
     return (
         <>
-            <div className="w-full flex items-center xs:flex-col sm:flex-col xs:grid-cols-1 justify-center 2xl:mt-10 md:px-20 sm:grid-cols-1 md:grid-cols-2">
-                <div className="flex flex-row sm:mr-10">
+            <div className="w-full flex items-center xs:flex-col sm:flex-col md:flex-row xs:grid-cols-1 justify-center 2xl:mt-10 md:px-10 lg:px-20 sm:grid-cols-1 md:grid-cols-2">
+                <div className="flex flex-row sm:mr-10 md:mr-8 lg:mr-10">
                     <Image 
                         className="shadow-2xl shadow-gray-800 relative rounded-2xl group object-contain xs:w-[180px] sm:w-[280px] xs:justify-center xs:flex" 
                         width={400} 
@@ -26,7 +26,7 @@ export default function Biografia() {
                         <h1 className="xs:text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]">
                             Sobre mim
                         </h1>
-                        <span className="sm:inline-flex xs:w-[250px] sm:w-[350px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] xs:ml-2 sm:ml-3 md:ml-4 2xl:ml-6"></span>
+                        <span className="sm:inline-flex xs:w-[250px] sm:w-[350px] md:w-[260px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] xs:ml-2 sm:ml-2 2xl:ml-6"></span>
                     </div>
                     <motion.div 
                         whileHover={{ transform: "translateX(100px)" }}
