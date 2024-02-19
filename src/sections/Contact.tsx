@@ -57,7 +57,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="relative justify-center items-center flex shadow-2xl shadow-indigo-200 xs:-bottom-40 xs:left-0 sm:-bottom-24 sm:right-40 md:-top-6 md:-right-32 xs:w-[350px] sm:w-[550px] lg:w-[600px]">
+                <div className="relative justify-center items-center flex shadow-2xl shadow-indigo-200 xs:-bottom-40 xs:left-0 sm:-bottom-24 sm:right-40 md:-top-6 md:-right-32 lg:-right-44 xs:w-[350px] sm:w-[550px] lg:w-[600px]">
                     <Card className="w-full xs:p-10 items-center">
                         <form action="" onSubmit={enviaEmail}>
                             {/* recrutador enviar mensagem   */}

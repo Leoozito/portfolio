@@ -21,13 +21,14 @@ export default function Experience() {
                     visible={true}
                     className="vertical-timeline-element--education"
                     date="28/10/2021 - 17/10/2022"
-                    icon={<PiCertificateFill/>}
+                    icon={<PiCertificateFill size={26}/>}
                     contentStyle={{
                         background: 'rgb(245,245,245)', color: '#000000',
                         boxShadow: "none",
                         border: "1px solid rgb(245, 245, 245)",
                         textAlign: "left",
                         padding: "1.3rem 2rem",
+                        borderRadius: '24px',
                     }}
                     contentArrowStyle={{
                         borderRight: '10px solid  rgb(245, 245, 245)',
@@ -37,11 +38,9 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Curso - Desenvolvedor de WebSite e Design Grafico</h1>
+                    <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Começo da jornada</h1>
                     <p>
-                        Neste periodo, iniciou meu grande interesse por tecnologia e querer entender mais sobre as complexidades deste universo. Cursei este curso e aprendi sobre: {"    "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 lg:text-lg">HTML,</span>
-                        {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 lg:text-lg"> CSS</span>
-                        {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 lg:text-lg">JavaScript</span>
+                        Sempre fui curioso pela tecnologia e admirado com a complexidade, então eu me motivei a entrar nesse universo por meio da programação, tirei certificações de cursos de TI onde aprendi HTML CSS, JavaScript, Design, pacotes Office
                     </p>
                 </VerticalTimelineElement>
 
@@ -54,8 +53,9 @@ export default function Experience() {
                     contentStyle={{
                         background: 'rgb(245,245,245)', color: '#000000',
                         boxShadow: "none",
-                        border: "1px solid rgb(245, 245, 245)",
+                        border: "4px solid rgb(245, 245, 245)",
                         textAlign: "left",
+                        borderRadius: '24px',
                         padding: "1.3rem 2rem",
                     }}
                     contentArrowStyle={{
@@ -68,12 +68,11 @@ export default function Experience() {
                 >
                     <h1 className="sm:text-lg lg:text-xl font-bold text-indigo-700">Desenvolvedor Full-Stack</h1>
                     <p>
-                        Trabalhei na empresa DVR Industrial, empresa nacional responsavel por fabricar e monitorar os registros de placas veiculares mercosul. 
+                        Chegou meu periodo de experiencia, consegui um estágio em uma empresa que fabrica placas de carros 
                         <br/> <br/>
-                        Participei no desenvolvimento de um sistema web de rastreabilidade mais performatico para empresa, reformulando o front-end e back-end completo. 
-                        Trabalhei no site web da empresa e em criações de aplicações.
+                        Trabalhei inicialmente no site web da empresa, em seguida junto da minha equipe, participei no desenvolvimento de um novo sistema web completo e mais perfomático, reformulando o front-end e back-end, e também criações de automações de processos.
+                        Criei habilidades de front-end, design, de back-end ao criar API's REST, entre outras habilidades de desenvolvedor.  
                         <br/> <br/>
-                        Principais tecnologias utilizadas: {"  "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 lg:text-lg">Python, Django Ninja, NextJS, ReactJS, TypeScript, MySQL, Git & GitHub, REST APIs, TailwindCSS, CSS3 & HTML5</span>
                     </p>
                 </VerticalTimelineElement>
                 
@@ -88,6 +87,7 @@ export default function Experience() {
                         border: "1px solid rgb(245, 245, 245)",
                         textAlign: "left",
                         padding: "1.3rem 2rem",
+                        borderRadius: '24px',
                     }}
                     contentArrowStyle={{
                         borderRight: '10px solid  rgb(245, 245, 245)',
@@ -99,7 +99,7 @@ export default function Experience() {
                 >
                     <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Constante aprendizado</h1>
                     <p>
-                        Agora estou me profissionalizando ainda mais, tendo como objetivo evoluir ainda mais minhas habilidades como full-stack. Para isto estou inicializando projetos pessoais e cursando novas tecnologias por meio da Alura.
+                        Agora estou me profissionalizando ainda mais, estudando muito e procurando ainda mais desafios de projetos. Cai entre nós, ainda estou enferrujado no back-end, mas é aquela, nada que nós colocamos foco e prioridade, deixará de ser realizado.
                     </p>
                 </VerticalTimelineElement>
 

@@ -45,9 +45,9 @@ export default function Skills() {
             },
             breakpoints: {
                 1000: {
-                    perView: 3,
+                    perView: 6,
                 },
-                1800: {
+                1200: {
                     perView: 4,
                 }
             }
