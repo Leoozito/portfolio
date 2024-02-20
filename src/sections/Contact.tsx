@@ -6,7 +6,7 @@ import Image from "next/image"
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useForm } from "react-hook-form"
-
+import { Toaster, toast } from "sonner";
 
 export default function Contact() {
 
@@ -29,7 +29,9 @@ export default function Contact() {
         resolver: zodResolver(createUserFormSchema)
     });
 
-    function enviaEmail() {
+    function enviaEmail(data:createUserFormData) {
+
+        console.log(data)
 
         const templateParams = {
             from_name: nomeRecrutador,
@@ -37,14 +39,30 @@ export default function Contact() {
             email: emailRecrutador    
         }
 
-        emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
-        .then((res) => {
-            console.log("Email enviado", res.status, res.text)
-        })
-        .catch((err) => {
-            console.log("ERRO", err)
-        })
+        toast.success("Wow so easy !");
+        // emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
+        // .then((res) => {
+        //     console.log("Email enviado", res.status, res.text)
+        // })
+        // .catch((err) => {
+        //     console.log("ERRO", err)
+        // })
     }
+
+    // Toastify({
+    //     text: "This is a toast",
+    //     duration: 3000,
+    //     destination: "https://github.com/apvarun/toastify-js",
+    //     newWindow: true,
+    //     close: true,
+    //     gravity: "top", // `top` or `bottom`
+    //     position: "left", // `left`, `center` or `right`
+    //     stopOnFocus: true, // Prevents dismissing of toast on hover
+    //     style: {
+    //       background: "linear-gradient(to right, #00b09b, #96c93d)",
+    //     },
+    //     onClick: enviaEmail(){} // Callback after click
+    // }).showToast();
 
     return (
         <>
@@ -88,33 +106,40 @@ export default function Contact() {
                                                 placeholder="Seu Nome"
                                                 value={nomeRecrutador} className="items-center w-auto"
                                             />
-                                            {errors.nomeRecrutador && <span>{errors.nomeRecrutador.message}</span>}
+                                            {errors.nomeRecrutador && <span className="text-red-700">{errors.nomeRecrutador.message}</span>}
                                         </div>
                                         <div className="flex-col">
                                             <Input
                                                 {...register("emailRecrutador")}
                                                 value={emailRecrutador} placeholder="Endereço de email" className="items-center w-auto"
                                             />
-                                            {errors.emailRecrutador && <span>{errors.emailRecrutador.message}</span>}
+                                            {errors.emailRecrutador && <span className="text-red-700">{errors.emailRecrutador.message}</span>}
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="flex-col">
+                                        <div className="flex-col mb-6">
                                             <Textarea
                                                 {...register("mensagem")}
                                                 value={mensagem}
-                                                placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-full mb-6 items-center"
+                                                placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-full items-center"
                                             />
-                                            {errors.mensagem && <span>{errors.mensagem.message}</span>}
+                                            {errors.mensagem && <span className="text-red-700">{errors.mensagem.message}</span>}
                                         </div>
                                         <Button
-                                            onClick={enviaEmail} className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48"
+                                            type="submit"
+                                            className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48"
                                         >
                                             Enviar
                                         </Button>
                                     </div>
                                 </div>
                             </div>
+
+                            <Toaster
+                                position="bottom-center"
+                                richColors  
+                            />
+
                         </form>
                     </Card>
                 </div>
