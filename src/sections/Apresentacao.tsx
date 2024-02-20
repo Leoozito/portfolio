@@ -36,7 +36,7 @@ export default function Apresentacao() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 2 }}
           transition={{
-            duration: 4,
+            duration: 3,
             delay: 1.8,
             ease: [0.455, 0.03, 0.515, 0.955],
           }}
@@ -49,7 +49,7 @@ export default function Apresentacao() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 2 }}
           transition={{
-            duration: 4,
+            duration: 3,
             delay: 2,
             ease: [0.455, 0.03, 0.515, 0.955],
           }}

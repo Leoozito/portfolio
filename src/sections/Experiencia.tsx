@@ -5,6 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { PiCertificateFill } from "react-icons/pi";
 import { AiFillCode } from "react-icons/ai";
 import { MdWork } from "react-icons/md";
+import { motion } from "framer-motion";
 
 export default function Experience() {
     return (
@@ -38,10 +39,16 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Começo da jornada</h1>
-                    <p>
-                        Sempre fui curioso pela tecnologia e admirado com a complexidade, então eu me motivei a entrar nesse universo por meio da programação, tirei certificações de cursos de TI onde aprendi HTML CSS, JavaScript, Design, pacotes Office
-                    </p>
+                    <motion.div
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       viewport={{ once: true }}
+                    >
+                        <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Começo da jornada</h1>
+                        <p>
+                            Sempre fui curioso pela tecnologia e admirado com a complexidade, então eu me motivei a entrar nesse universo por meio da programação, tirei certificações de cursos de TI onde aprendi HTML CSS, JavaScript, Design, pacotes Office
+                        </p>
+                    </motion.div>
                 </VerticalTimelineElement>
 
                 {/* descricao de trabalho */}
@@ -66,14 +73,20 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="sm:text-lg lg:text-xl font-bold text-indigo-700">Desenvolvedor Full-Stack</h1>
-                    <p>
-                        Chegou meu periodo de experiencia, consegui um estágio em uma empresa que fabrica placas de carros 
-                        <br/> <br/>
-                        Trabalhei inicialmente no site web da empresa, em seguida junto da minha equipe, participei no desenvolvimento de um novo sistema web completo e mais perfomático, reformulando o front-end e back-end, e também criações de automações de processos.
-                        Criei habilidades de front-end, design, de back-end ao criar API's REST, entre outras habilidades de desenvolvedor.  
-                        <br/> <br/>
-                    </p>
+                    <motion.div
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       viewport={{ once: true }}
+                    >
+                        <h1 className="sm:text-lg lg:text-xl font-bold text-indigo-700">Desenvolvedor Full-Stack</h1>
+                        <p>
+                            Chegou meu periodo de experiencia, consegui um estágio em uma empresa que fabrica placas de carros
+                            <br/> <br/>
+                            Trabalhei inicialmente no site web da empresa, em seguida junto da minha equipe, participei no desenvolvimento de um novo sistema web completo e mais perfomático, reformulando o front-end e back-end, e também criações de automações de processos.
+                            Criei habilidades de front-end, design, de back-end ao criar API's REST, entre outras habilidades de desenvolvedor.
+                            <br/> <br/>
+                        </p>
+                    </motion.div>
                 </VerticalTimelineElement>
                 
                 <VerticalTimelineElement
@@ -97,10 +110,16 @@ export default function Experience() {
                         fontSize: "1.5rem",
                     }}
                 >
-                    <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Constante aprendizado</h1>
-                    <p>
-                        Agora estou me profissionalizando ainda mais, estudando muito e procurando ainda mais desafios de projetos. Cai entre nós, ainda estou enferrujado no back-end, mas é aquela, nada que nós colocamos foco e prioridade, deixará de ser realizado.
-                    </p>
+                    <motion.div
+                       initial={{ opacity: 0 }}
+                       whileInView={{ opacity: 1 }}
+                       viewport={{ once: true }}
+                    >
+                        <h1 className="text-indigo-700 sm:text-lg lg:text-xl font-bold">Constante aprendizado</h1>
+                        <p>
+                            Agora estou me profissionalizando ainda mais, estudando muito e procurando ainda mais desafios de projetos. Cai entre nós, ainda estou enferrujado no back-end, mas é aquela, nada que nós colocamos foco e prioridade, deixará de ser realizado.
+                        </p>
+                    </motion.div>
                 </VerticalTimelineElement>
 
             </VerticalTimeline>
