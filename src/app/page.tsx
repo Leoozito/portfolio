@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <div className='bg-indigo-200 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full'>
-        <div className='sm:my-40 md:mt-16 lg:my-40'>
+        <div className='sm:my-40 md:mt-16 lg:mt-20 lg:mb-40'>
           <section id="biografia">
             <Biografia/>
           </section>
@@ -31,7 +31,7 @@ export default function Home() {
             <Habilidades/>
           </section>
         </div>
-        <div className='xs:mx-2 sm:mx-8 md:mx-12 lg:mx-20 xl:mx-32 md:mt-10'>
+        <div className='xs:mx-2 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24 md:mt-10'>
           <section id="experiencia">
             <Experience/>
           </section>
