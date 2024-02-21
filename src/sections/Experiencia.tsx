@@ -78,12 +78,12 @@ export default function Experience() {
                        whileInView={{ opacity: 1 }}
                        viewport={{ once: true }}
                     >
-                        <h1 className="sm:text-lg lg:text-xl font-bold text-indigo-700">Desenvolvedor Full-Stack</h1>
+                        <h1 className="sm:text-lg lg:text-xl font-bold text-indigo-700">Desenvolvedor Full&apos;Stack</h1>
                         <p>
                             Chegou meu periodo de experiencia, consegui um estágio em uma empresa que fabrica placas de carros
                             <br/> <br/>
                             Trabalhei inicialmente no site web da empresa, em seguida junto da minha equipe, participei no desenvolvimento de um novo sistema web completo e mais perfomático, reformulando o front-end e back-end, e também criações de automações de processos.
-                            Criei habilidades de front-end, design, de back-end ao criar API's REST, entre outras habilidades de desenvolvedor.
+                            Criei habilidades de front-end, design, de back-end ao criar API&apos;s REST, entre outras habilidades de desenvolvedor.
                             <br/> <br/>
                         </p>
                     </motion.div>

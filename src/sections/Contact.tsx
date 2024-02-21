@@ -39,30 +39,15 @@ export default function Contact() {
             email: emailRecrutador    
         }
 
-        toast.success("Wow so easy !");
-        // emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
-        // .then((res) => {
-        //     console.log("Email enviado", res.status, res.text)
-        // })
-        // .catch((err) => {
-        //     console.log("ERRO", err)
-        // })
+        toast.success("Mensagem enviada com sucesso !");
+        emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
+        .then((res) => {
+            console.log("Email enviado", res.status, res.text)
+        })
+        .catch((err) => {
+            console.log("ERRO", err)
+        })
     }
-
-    // Toastify({
-    //     text: "This is a toast",
-    //     duration: 3000,
-    //     destination: "https://github.com/apvarun/toastify-js",
-    //     newWindow: true,
-    //     close: true,
-    //     gravity: "top", // `top` or `bottom`
-    //     position: "left", // `left`, `center` or `right`
-    //     stopOnFocus: true, // Prevents dismissing of toast on hover
-    //     style: {
-    //       background: "linear-gradient(to right, #00b09b, #96c93d)",
-    //     },
-    //     onClick: enviaEmail(){} // Callback after click
-    // }).showToast();
 
     return (
         <>
@@ -78,11 +63,11 @@ export default function Contact() {
                 
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 xs:flex-row sm:flex-row md:flex-col xs:flex sm:flex justify-center items-center">
 
-                    <Typography className="absolute xs:top-0 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-0">
+                    <Typography className="absolute xs:-top-10 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-0">
                         Estou empolgado para trabalhar com você !
                     </Typography>
 
-                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-64 xs:top-14 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
+                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-64 xs:top-10 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"

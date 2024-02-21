@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect } from 'react';
+import React from 'react';
 import { LiaFileDownloadSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
 
@@ -73,19 +73,19 @@ export default function Apresentacao() {
           Interessado em trabalhar ao lado de uma pessoa que esteja empolgado com novos desafios, e que tenha comprometimento e criatividade?
         </p>
         
-        <div className='flex grid-cols-2 items-center xs:gap-6 sm:gap-12'>
+        <div className='flex grid-cols-2 items-center xs:gap-4 overflow-hidden sm:gap-12'>
           <a
-            className="dark:bg-gradient-to-r dark:to-[#7dd3fc] bg-indigo-600 text-white xs:text-sm sm:text-md lg:text-lg xl:text-xl sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold w-fit xs:mt-2.5 sm:mt-1.5 lg:mt-0"
+            className="dark:bg-gradient-to-r dark:to-[#7dd3fc] bg-indigo-600 text-white xs:text-sm sm:text-md lg:text-lg xl:text-xl sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold w-fit sm:mt-1.5 lg:mt-0 items-center"
             href="#contato"
           >
             Contate-Me
           </a>
           <a
-            className="ml-6 bg-gradient-to-r from-gray-900 to-gray-800 text-white xs:text-sm sm:text-md lg:text-lg xl:text-lg sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold xs:mt-2.5 sm:mt-1.5 lg:mt-0 dark:bg-gradient-none dark:bg-indigo-600 flex w-fit items-center"
+            className="bg-gradient-to-r from-gray-900 to-gray-800 text-white xs:text-sm sm:text-md lg:text-lg xl:text-lg sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold xs:mt-2.5 sm:mt-1.5 lg:mt-0 dark:bg-gradient-none dark:bg-indigo-600 flex w-fit items-center"
             href="#contato"
           >
-            CV
-            <LiaFileDownloadSolid className='ml-1 text-white xs:text-sm sm:text-md lg:text-lg xl:text-lg' size={32}/>
+            Download CV
+            <LiaFileDownloadSolid className='ml-1 text-white xs:text-xs sm:text-sm lg:text-md xl:text-md' size={32}/>
           </a>
         </div>
       </motion.div>
