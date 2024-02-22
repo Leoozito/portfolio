@@ -37,13 +37,16 @@ export default function Skills() {
         return new Glide('.glide', {
             focusAt: "center",
             autoplay: 2000,
-            perView: 1 ,
+            perView: 6,
             hoverpause: true,
             peek: {
                 before: 100,
                 after: 0
             },
             breakpoints: {
+                300: {
+                    perView: 4,
+                },
                 600: {
                     perView: 3,
                 },

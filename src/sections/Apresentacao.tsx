@@ -64,7 +64,7 @@ export default function Apresentacao() {
         animate={{ opacity: 1 }}
         whileHover={{ scale: [null, 1.1, 1.1] }}
         transition={{ duration: 0.6 }} 
-        className="xs:mt-2.5 sm:mt-1.5 lg:mt-0 xs:items-center sm:items-center lg:items-start xs:flex sm:flex flex-col lg:gap-5 xs:gap-1 sm:gap-1 absolute rounded-md shadow-lg top-0 xs:-bottom-72 sm:bottom-14 xl:bottom-0 m-auto lg:right-10 xs:right-8 sm:right-4 dark:bg-[#1e293b] bg-white lg:p-6 xs:p-2 sm:p-4 h-fit xs:w-64 xs:h-44 sm:w-60 lg:w-80 xl:w-96 2xl:w-1/3"
+        className="xs:items-center sm:items-center lg:items-start xs:flex sm:flex flex-col lg:gap-5 xs:gap-1 sm:gap-1 absolute rounded-md shadow-lg top-0 xs:-bottom-72 sm:bottom-14 xl:bottom-0 m-auto lg:right-10 xs:right-8 sm:right-4 dark:bg-[#1e293b] bg-white lg:p-6 xs:p-2 sm:p-4 h-fit xs:w-64 xs:h-44 sm:w-60 lg:w-80 xl:w-96 2xl:w-1/3"
       >
 
         <h1 className="xs:text-md sm:text-xl lg:text-2xl 2xl:text-3xl font-bold text-indigo-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#eef2ff] dark:via-[#7dd3fc] dark:to-[#eef2ff]">Olá, Me chamo Leonardo</h1>
@@ -73,7 +73,7 @@ export default function Apresentacao() {
           Interessado em trabalhar ao lado de uma pessoa que esteja empolgado com novos desafios, e que tenha comprometimento e criatividade?
         </p>
         
-        <div className='flex grid-cols-2 items-center xs:gap-4 overflow-hidden sm:gap-12'>
+        <div className='xs:mt-2.5 sm:mt-1.5 lg:mt-0 flex grid-cols-2 items-center xs:gap-4 overflow-hidden sm:gap-12'>
           <a
             className="dark:bg-gradient-to-r dark:to-[#7dd3fc] bg-indigo-600 text-white xs:text-sm sm:text-md lg:text-lg xl:text-xl sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold w-fit sm:mt-1.5 lg:mt-0 items-center"
             href="#contato"
@@ -82,7 +82,7 @@ export default function Apresentacao() {
           </a>
           <a
             className="bg-gradient-to-r from-gray-900 to-gray-800 text-white xs:text-sm sm:text-md lg:text-lg xl:text-lg sm:px-2 xs:p-1.5 sm:py-1 lg:px-3 lg:py-2 rounded-md font-semibold lg:mt-0 dark:bg-gradient-none dark:bg-indigo-600 flex w-fit items-center"
-            href="#contato"
+            href="/doc/cv-leonardo-nogueira.pdf" download
           >
             Download CV
             <LiaFileDownloadSolid className='text-white xs:text-xs sm:text-sm lg:text-md xl:text-md' size={32}/>
