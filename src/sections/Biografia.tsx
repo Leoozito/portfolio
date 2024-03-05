@@ -23,7 +23,7 @@ export default function Biografia() {
                 {/* parte direita com cards descritivos */}
                 <div className="md:w-1/2 xs:w-72 sm:w-[420px] flex flex-col gap-6 justify-between items-start">
                     <div className="flex flex-row items-center lg:mt-10 xs:mt-12 sm:mt-14">
-                        <h1 className="xs:text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]">
+                        <h1 className="xs:text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8] uppercase">
                             Sobre mim
                         </h1>
                         <span className="sm:inline-flex xs:w-[250px] sm:w-[350px] md:w-[260px] lg:w-[480px] h-[6px] bg-indigo-800 dark:bg-[#818cf8] xs:ml-2 sm:ml-3 lg:ml-3 2xl:ml-6"></span>
@@ -35,7 +35,9 @@ export default function Biografia() {
                         initial={{ opacity: 0.2 }}
                         whileInView={{ opacity: 1 }}
                     >
-                        <Card className="dark:bg-[#1e293b]">
+                        <Card 
+                            placeholder="descrição sobre mim" className="dark:bg-[#1e293b]"
+                        >
 
                                 <p className="dark:text-white sm:text-lg p-6 rounded-md">
                                     Sou apaixonado por tecnologia e suas evoluções constante. Para mim, ter a sensação
@@ -51,7 +53,10 @@ export default function Biografia() {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                     >
-                        <Card className="mt-2 dark:bg-[#1e293b]">
+                        <Card 
+                            placeholder="descrição sobre mim" 
+                            className="mt-2 dark:bg-[#1e293b]"
+                        >
                             <p className="dark:text-white sm:text-lg p-6 rounded-md">
                                 Meu interesse em programação surgiu em 2022, quando me surgiu uma oportunidade de estágio.
                                 Participei em diversos desenvolvimentos nesse periodo, e com muitos estudos e diversas praticas,
@@ -70,7 +75,10 @@ export default function Biografia() {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                     >
-                        <Card className="mt-2 dark:bg-[#1e293b]">
+                        <Card
+                            placeholder="descrição sobre mim"  
+                            className="mt-2 dark:bg-[#1e293b]"
+                        >
                             <p className="dark:text-white sm:text-lg p-6 rounded-md">
                                 <span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">Minha stack principal </span>é
                                 {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 dark:text-[#818cf8]">React,</span>

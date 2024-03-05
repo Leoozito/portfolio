@@ -11,7 +11,7 @@ export default function Experience() {
     return (
         <>
             <div className="justify-center items-center flex mt-16 mb-10 md:mb-20">
-                <h1 className="xs:text-3xl sm:text-3xl xl:text-4xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]">Experiencia</h1>
+                <h1 className="xs:text-3xl sm:text-3xl xl:text-4xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8] uppercase">Experiencia</h1>
             </div>
             <VerticalTimeline                     
                 animate={true} 

@@ -1,9 +1,6 @@
 'use client'
 import Image from "next/image"
-import { Card } from "@material-tailwind/react"
-import { motion } from "framer-motion";
 import { useEffect, useRef, useMemo } from "react";
-//import Glide from "@glidejs/glide"
 import Glide, { Anchors, Autoplay, Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
@@ -38,7 +35,6 @@ export default function Skills() {
             focusAt: "center",
             autoplay: 2000,
             perView: 6,
-            hoverpause: true,
             peek: {
                 before: 100,
                 after: 0
@@ -74,7 +70,7 @@ export default function Skills() {
             {/* titulo */}
             <div className="justify-center items-center flex">
                 <h1 
-                    className="xs:text-3xl sm:text-3xl xl:text-4xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8]"
+                    className="xs:text-3xl sm:text-3xl xl:text-4xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8] uppercase"
                 >Habilidades</h1>
             </div>
 

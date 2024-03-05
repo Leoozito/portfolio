@@ -20,7 +20,7 @@ export default function Home() {
           </section>
       </div>
 
-      <div className='bg-indigo-200 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full'>
+      <div className='bg-[#e5e7eb] dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full'>
         <div className='sm:my-40 md:mt-16 lg:mt-20 lg:mb-40'>
           <section id="biografia">
             <Biografia/>

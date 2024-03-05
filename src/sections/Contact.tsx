@@ -63,7 +63,7 @@ export default function Contact() {
                 
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 xs:flex-row sm:flex-row md:flex-col xs:flex sm:flex justify-center items-center">
 
-                    <Typography className="absolute xs:-top-10 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-0">
+                    <Typography placeholder="" className="absolute xs:-top-10 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-0">
                         Estou empolgado para trabalhar com você !
                     </Typography>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
 
                 <div className="relative justify-center items-center flex shadow-2xl shadow-indigo-200 xs:-bottom-40 xs:left-0 sm:-bottom-24 sm:right-40 md:-top-6 md:-right-32 lg:-right-44 xs:w-[350px] sm:w-[550px] lg:w-[500px]">
-                    <Card className="w-full xs:p-10 items-center">
+                    <Card placeholder="" className="w-full xs:p-10 items-center">
                         <form action="" onSubmit={handleSubmit(enviaEmail)}>
                             {/* recrutador enviar mensagem   */}
                             <div className="justify-center items-center xs:mx-0 2xl:mx-60 flex sm:p-8">
@@ -87,6 +87,7 @@ export default function Contact() {
                                     <div className="xs:grid sm:flex md:grid lg:flex mb-8 sm:gap-12 xs:gap-6 md:gap-6">
                                         <div className="flex-col">
                                             <Input
+                                                crossOrigin=""
                                                 {...register("nomeRecrutador")}
                                                 placeholder="Seu Nome"
                                                 value={nomeRecrutador} className="items-center w-auto"
@@ -95,6 +96,7 @@ export default function Contact() {
                                         </div>
                                         <div className="flex-col">
                                             <Input
+                                                crossOrigin=""
                                                 {...register("emailRecrutador")}
                                                 value={emailRecrutador} placeholder="Endereço de email" className="items-center w-auto"
                                             />
@@ -111,6 +113,7 @@ export default function Contact() {
                                             {errors.mensagem && <span className="text-red-700">{errors.mensagem.message}</span>}
                                         </div>
                                         <Button
+                                            placeholder=""
                                             type="submit"
                                             className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48"
                                         >
