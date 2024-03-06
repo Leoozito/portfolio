@@ -32,6 +32,7 @@ export default function Skills() {
 
     const slider = useMemo(() => {
         return new Glide('.glide', {
+            type: 'carousel',
             focusAt: "center",
             autoplay: 2000,
             perView: 6,

@@ -53,7 +53,7 @@ export default function Contact() {
         <>
             {/* titulo */}
             <div className="justify-center items-center flex xs:mt-6 sm:mt-10 md:mt-16">
-                <h1 className="uppercase xs:text-2xl sm:text-2xl 2xl:text-3xl font-extrabold text-white">Contato</h1>
+                <h1 className="uppercase xs:text-2xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold text-white">Contato</h1>
             </div>
             <div className="justify-center items-center flex mt-2 xs:mb-10 md:mb-20">
                 <span className="rounded-lg justify-center flex w-[250px] h-[6px] bg-[#ffffff] ml-6"></span>

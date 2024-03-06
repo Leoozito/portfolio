@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className='relative xs:mx-2 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24 md:mt-10'>
           <section id="experiencia">
-            <div className="absolute left-60 bottom-60 blob w-[450px] h-[450px] rounded blur-3xl bg-opacity-60 bg-gradient-to-r from-indigo-400 to-green-200"></div>
+            <div className="absolute left-60 bottom-60 blob w-[450px] h-[450px] rounded blur-3xl bg-opacity-60 bg-gradient-to-r from-indigo-400 to-green-200 dark:from-indigo-600 dark:to-purple-700"></div>
             <Experience/>
           </section>
         </div>
