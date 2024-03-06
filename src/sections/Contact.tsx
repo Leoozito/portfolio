@@ -63,7 +63,7 @@ export default function Contact() {
                 
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 xs:flex-row sm:flex-row md:flex-col xs:flex sm:flex justify-center items-center">
 
-                    <div className="absolute xs:-top-10 flex justify-center items-center xs:px-2 xs:left-4 xs:-bottom-20 sm:right-20 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[40px] lg:-left-36 border border-solid border-white border-opacity-25 rounded-lg bg-gray-600/30 bg-opacity-45 shadow-md backdrop-blur-15 sm:w-72 sm:h-20 md:w-72 md:h-36 sm:p-2 md:px-8">
+                    <div className="absolute xs:-top-10 flex justify-center items-center xs:px-2 xs:left-4 xs:-bottom-20 sm:right-20 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[40px] lg:-left-36 border border-solid border-white border-opacity-25 rounded-lg bg-gray-200/20 bg-opacity-45 shadow-md backdrop-blur-15 sm:w-72 sm:h-20 md:w-72 md:h-36 sm:p-2 md:px-8">
                         <Typography placeholder="" className="flex justify-center z-10 text-white xs:text-md sm:text-lg lg:text-xl font-extrabold items-center">
                             Estou empolgado para trabalhar com você !
                         </Typography>
