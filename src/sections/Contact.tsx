@@ -63,11 +63,13 @@ export default function Contact() {
                 
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 xs:flex-row sm:flex-row md:flex-col xs:flex sm:flex justify-center items-center">
 
-                    <Typography placeholder="" className="z-10 absolute xs:-top-10 flex justify-center items-center text-white font-extrabold xs:text-md sm:text-xl lg:text-2xl xs:left-10 xs:-bottom-20 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-10">
-                        Estou empolgado para trabalhar com você !
-                    </Typography>
+                    <div className="absolute xs:-top-10 flex justify-center items-center xs:px-2 xs:left-4 xs:-bottom-20 sm:right-20 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[40px] lg:-left-36 border border-solid border-white border-opacity-25 rounded-lg bg-gray-600/30 bg-opacity-45 shadow-md backdrop-blur-15 sm:w-72 sm:h-20 md:w-72 md:h-36 sm:p-2 md:px-8">
+                        <Typography placeholder="" className="flex justify-center z-10 text-white xs:text-md sm:text-lg lg:text-xl font-extrabold items-center">
+                            Estou empolgado para trabalhar com você !
+                        </Typography>
+                    </div>
 
-                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-60 xs:top-10 xs:left-[95px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
+                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-60 xs:top-10 xs:left-[95px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-32">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
