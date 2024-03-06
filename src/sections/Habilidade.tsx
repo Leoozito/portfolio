@@ -41,7 +41,7 @@ export default function Skills() {
             },
             breakpoints: {
                 300: {
-                    perView: 4,
+                    perView: 2,
                 },
                 600: {
                     perView: 3,
@@ -70,12 +70,12 @@ export default function Skills() {
             {/* titulo */}
             <div className="justify-center items-center flex">
                 <h1 
-                    className="xs:text-3xl sm:text-3xl xl:text-4xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8] uppercase"
+                    className="xs:text-2xl sm:text-2xl md:text-3xl 2xl:text-4xl font-extrabold text-indigo-900 flex items-center dark:text-[#818cf8] uppercase"
                 >Habilidades</h1>
             </div>
 
             {/* tecnologias */}
-            <div className="glide mt-20">
+            <div className="glide my-28">
                 <div 
                     className="glide__track xs:my-8 sm:my-12 lg:mx-20 sm:mx-10 xs:mx-6" data-glide-el="track"
                 >

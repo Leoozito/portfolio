@@ -63,7 +63,7 @@ export default function Biografia() {
                                 me tornei  {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">especialista</span>{" "}
                                 em {" "}<span className="font-extrabold text-indigo-700 antialiased dark:text-[#818cf8]">projetar</span>{" "} e
                                 {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">desenvolver</span>{" "}
-                                soluções de alta qualidade que {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">encantem</span>{" "}
+                                soluções de alta qualidade, que {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">encantem</span>{" "}
                                 os clientes e {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">superem suas expectativas</span>.
                             </p>
                         </Card>
@@ -87,7 +87,7 @@ export default function Biografia() {
                                 {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 dark:text-[#818cf8]">Node.js,</span>
                                 {" "}<span className="underline underline-offset-4 decoration-2 font-extrabold text-indigo-700 dark:text-[#818cf8]">Python e MySQL.</span>
                                 Também estou familiarizado com
-                                {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">TypeScript</span> e
+                                {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">Java</span> e
                                 {" "}<span className="font-extrabold text-indigo-700 dark:text-[#818cf8]">Golang</span>.
                                 Estou sempre em busca de aprender novas tecnologias.
                                 Atualmente estou procurando uma posição como desenvolvedor de software.

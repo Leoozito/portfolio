@@ -53,7 +53,7 @@ export default function Contact() {
         <>
             {/* titulo */}
             <div className="justify-center items-center flex xs:mt-6 sm:mt-10 md:mt-16">
-                <h1 className="uppercase xs:text-lg sm:text-xl xl:text-2xl 2xl:text-3xl font-extrabold text-white">Contato</h1>
+                <h1 className="uppercase xs:text-2xl sm:text-2xl 2xl:text-3xl font-extrabold text-white">Contato</h1>
             </div>
             <div className="justify-center items-center flex mt-2 xs:mb-10 md:mb-20">
                 <span className="rounded-lg justify-center flex w-[250px] h-[6px] bg-[#ffffff] ml-6"></span>
@@ -63,11 +63,11 @@ export default function Contact() {
                 
                 <div className="relative xs:grid-cols-1 sm:grid-cols-1 xs:flex-row sm:flex-row md:flex-col xs:flex sm:flex justify-center items-center">
 
-                    <Typography placeholder="" className="absolute xs:-top-10 flex justify-center items-center text-white font-extrabold xs:text-lg sm:text-xl lg:text-2xl xs:left-6 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-0">
+                    <Typography placeholder="" className="z-10 absolute xs:-top-10 flex justify-center items-center text-white font-extrabold xs:text-md sm:text-xl lg:text-2xl xs:left-10 xs:-bottom-20 sm:right-24 sm:-bottom-16 md:-top-[400px] md:-left-10 lg:-top-[300px] lg:-left-10">
                         Estou empolgado para trabalhar com você !
                     </Typography>
 
-                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-60 xs:top-10 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
+                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-60 xs:top-10 xs:left-[95px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
