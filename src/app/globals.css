@@ -38,6 +38,11 @@ html {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.glide__slide[class*="active"] div {
+  width: 120px; 
+  height: 120px;
+  background: linear-gradient(-45deg, #141fed, #7b31f4);
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

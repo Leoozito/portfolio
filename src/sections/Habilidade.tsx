@@ -79,7 +79,7 @@ export default function Skills() {
                 <div 
                     className="glide__track xs:my-8 sm:my-12 lg:mx-20 sm:mx-10 xs:mx-6" data-glide-el="track"
                 >
-                    <ul className="glide__slides">
+                    <ul className="glide__slides items-center">
                         {tecnologias.map((tecnologia, index) => (
                             <li key={index} className="glide__slide">
                                 <div 
