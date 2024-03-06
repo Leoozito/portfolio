@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="">
                 <ul className="flex flex-row grid-cols-2 gap-8">
                     {icons.map((icon: any, index: number) => (
-                        <a href={icon.href} target="_blank">
+                        <a href={icon.href} target="_blank" key={index}>
                             <li
                                 className={`text-[rgba(167,146,129,0.6)] list-none w-[80px] h-[80px] leading-[50px] border cursor-pointer transition-[ease] duration-[0.3s] p-2 items-center justify-center flex border-solid border-[rgba(167,146,129,0.4)] hover:text-[rgba(167,146,129,1)] hover:border hover:border-solid ${icon.colorHouver} xs:text-2xl sm:text-3xl`} key={index}
                             >
