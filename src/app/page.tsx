@@ -6,6 +6,7 @@ import Habilidades from '../sections/Habilidade'
 import Experience from '../sections/Experiencia'
 import Projects from '../sections/Projetos'
 import Contact from '../sections/Contact'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -45,6 +46,9 @@ export default function Home() {
         >
           <Contact/>
         </section>
+      </div>
+      <div className="bg-gray-900">
+          <Footer/>
       </div>
     </>
   )
