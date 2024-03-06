@@ -67,7 +67,7 @@ export default function Contact() {
                         Estou empolgado para trabalhar com você !
                     </Typography>
 
-                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-64 xs:top-10 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
+                    <div className="flex justify-center items-center absolute xs:w-40 sm:w-60 lg:w-60 xs:top-10 xs:left-[166px] sm:-bottom-24 sm:left-24 md:bottom-20 md:-left-40 lg:-bottom-8 lg:-left-36">
                         <Image
                             className=""
                             src="/2206-removebg-preview.png"
@@ -87,34 +87,38 @@ export default function Contact() {
                                     <div className="xs:grid sm:flex md:grid lg:flex mb-8 sm:gap-12 xs:gap-6 md:gap-6">
                                         <div className="flex-col">
                                             <Input
+                                                label="Seu Nome"
                                                 crossOrigin=""
                                                 {...register("nomeRecrutador")}
-                                                placeholder="Seu Nome"
+                                                // placeholder="Seu Nome"
                                                 className="items-center w-auto"
                                             />
                                             {errors.nomeRecrutador && <span className="text-red-700">{errors.nomeRecrutador.message}</span>}
                                         </div>
                                         <div className="flex-col">
                                             <Input
-                                                crossOrigin=""
+                                                label="Endereço de email"
                                                 {...register("emailRecrutador")}
-                                                placeholder="Endereço de email" className="items-center w-auto"
+                                                // placeholder="Endereço de email" 
+                                                className="items-center w-auto"
+                                                crossOrigin=""
                                             />
                                             {errors.emailRecrutador && <span className="text-red-700">{errors.emailRecrutador.message}</span>}
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex-col mb-6">
-                                            <Textarea
+                                            <Textarea                               label="Sua mensagem"
                                                 {...register("mensagem")}
-                                                placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-full items-center"
+                                                // placeholder="Sua mensagem ..." 
+                                                className="xs:h-24 xs:w-64 sm:h-32 sm:w-full items-center"
                                             />
                                             {errors.mensagem && <span className="text-red-700">{errors.mensagem.message}</span>}
                                         </div>
                                         <Button
                                             placeholder=""
                                             type="submit"
-                                            className="justify-center items-center flex xs:w-24 xs:h-8 sm:w-32 md:w-48"
+                                            className="justify-center items-center xs:w-28 xs:h-12 sm:w-32 md:w-48 !bg-gradient-to-r !from-indigo-500 !to-blue-500 hover:!from-indigo-300 hover:!from-100%"
                                         >
                                             Enviar
                                         </Button>

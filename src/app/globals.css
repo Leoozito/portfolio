@@ -43,6 +43,15 @@ html {
   height: 120px;
   background: linear-gradient(-45deg, #141fed, #7b31f4);
 }
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .glide__slide[class*="active"] div {
+    width: 84px;
+    height: 84px;
+    background: linear-gradient(-45deg, #141fed, #7b31f4);
+  }
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

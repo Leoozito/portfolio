@@ -13,7 +13,7 @@ const tecnologias = [
 
     {"name_tech": "Tailwind CSS" , "color_tech":"bg-blue-200", "img_tech": "/img_tecnologies/tailwindcss-icon.svg", "size_img": 50, "alt_img": "Icone do TailwindCSS" },
 
-    {"name_tech": "JavaScript", "color_tech":"bg-yellow-200", "img_tech": "/img_tecnologies/javascript.png", "size_img": 60, "alt_img": "Icone do JavaScript" },
+    {"name_tech": "JavaScript", "color_tech":"bg-yellow-200", "img_tech": "/img_tecnologies/javascript.png", "size_img": 64, "alt_img": "Icone do JavaScript" },
 
     { "name_tech": "Git", "color_tech":"bg-orange-200", "img_tech": "/img_tecnologies/git.png", "size_img": 50, "alt_img": "Icone do GIT" },
 
