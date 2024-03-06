@@ -90,7 +90,7 @@ export default function Contact() {
                                                 crossOrigin=""
                                                 {...register("nomeRecrutador")}
                                                 placeholder="Seu Nome"
-                                                value={nomeRecrutador} className="items-center w-auto"
+                                                className="items-center w-auto"
                                             />
                                             {errors.nomeRecrutador && <span className="text-red-700">{errors.nomeRecrutador.message}</span>}
                                         </div>
@@ -98,7 +98,7 @@ export default function Contact() {
                                             <Input
                                                 crossOrigin=""
                                                 {...register("emailRecrutador")}
-                                                value={emailRecrutador} placeholder="Endereço de email" className="items-center w-auto"
+                                                placeholder="Endereço de email" className="items-center w-auto"
                                             />
                                             {errors.emailRecrutador && <span className="text-red-700">{errors.emailRecrutador.message}</span>}
                                         </div>
@@ -107,7 +107,6 @@ export default function Contact() {
                                         <div className="flex-col mb-6">
                                             <Textarea
                                                 {...register("mensagem")}
-                                                value={mensagem}
                                                 placeholder="Sua mensagem" className="xs:h-24 xs:w-64 sm:h-32 sm:w-full items-center"
                                             />
                                             {errors.mensagem && <span className="text-red-700">{errors.mensagem.message}</span>}

@@ -23,7 +23,7 @@ const tecnologias = [
 
     { "name_tech": "MUI" , "color_tech":"bg-blue-200", "img_tech": "/img_tecnologies/mu5.png", "size_img": 50, "alt_img": "Icone do MUI" },
 
-    { "name_tech": "NextJS" , "color_tech":"bg-gray-300", "img_tech": "/img_tecnologies/nextjs.svg", "size_img": 50, "alt_img": "Icone do NextJS" },
+    { "name_tech": "NextJS" , "color_tech":"bg-[#ffffff]", "img_tech": "/img_tecnologies/nextjs.svg", "size_img": 50, "alt_img": "Icone do NextJS" },
 
     {"name_tech": "ReactJS", "color_tech":"bg-gray-800", "img_tech": "/img_tecnologies/react.png", "size_img": 50, "alt_img": "Icone do ReactJS" },
 ]

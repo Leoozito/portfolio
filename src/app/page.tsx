@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <div className='bg-gray-300 dark:bg-[#1e1b4b] bg-gradient-to-t overflow-hidden w-full relative'>
-        <div className="blob w-[250px] h-[250px] rounded absolute top-0 left-0 blur-3xl bg-opacity-60 bg-indigo-600"></div>
+        <div className="blob w-[450px] h-[450px] rounded absolute top-40 left-60 blur-3xl bg-opacity-60 bg-indigo-500"></div>
         <div className='sm:my-40 md:mt-16 lg:mt-20 lg:mb-40'>
           <section id="biografia">
             <Biografia/>
@@ -32,9 +32,9 @@ export default function Home() {
             <Habilidades/>
           </section>
         </div>
-        <div className="blob w-[250px] h-[250px] rounded absolute bottom-0 left-0 blur-3xl bg-opacity-60 bg-yellow-600"></div>
-        <div className='xs:mx-2 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24 md:mt-10'>
+        <div className='relative xs:mx-2 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24 md:mt-10'>
           <section id="experiencia">
+            <div className="absolute -right-40 bottom-20 blob w-[450px] h-[450px] rounded blur-3xl bg-opacity-60 bg-gradient-to-r from-indigo-400 to-green-200 -z-10"></div>
             <Experience/>
           </section>
         </div>
