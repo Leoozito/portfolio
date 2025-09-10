@@ -7,7 +7,7 @@ import { AiFillCode } from "react-icons/ai";
 import { MdWork } from "react-icons/md";
 import { motion } from "framer-motion";
 
-export default function Experience() {
+export default function Experiences() {
     return (
         <>
             <div className="justify-center items-center flex mt-16 mb-16 md:mb-20">

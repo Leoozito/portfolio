@@ -4,7 +4,7 @@ import React from 'react';
 import { LiaFileDownloadSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
 
-export default function Apresentacao() {
+export default function Presentation() {
 
   return(
     <>
