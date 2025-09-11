@@ -6,15 +6,16 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Controller, FormProvider, SubmitHandler, useForm } from "react-hook-form"
 import { Toaster, toast } from "sonner";
+import { env } from "process";
 
 const schema = z.object({
-  recruiterEmail: z.string()
-    .nonempty("Campo obrigatório!")
-    .email("Formato de email inválido"),
-  recruiterName: z.string()
-    .nonempty("Campo obrigatório!"),
-  message: z.string()
-    .nonempty("Campo obrigatório!")
+    recruiterEmail: z.string()
+        .nonempty("Campo obrigatório!")
+        .email("Formato de email inválido"),
+    recruiterName: z.string()
+        .nonempty("Campo obrigatório!"),
+    message: z.string()
+        .nonempty("Campo obrigatório!")
 });
 
 type SendEmailContactFormData = z.infer<typeof schema>;
@@ -25,22 +26,25 @@ export default function Contact() {
         resolver: zodResolver(schema),
     });
 
-    const { 
-        control, 
-        handleSubmit, 
-        formState: { errors } 
+    const {
+        control,
+        handleSubmit,
+        formState: { errors }
     } = methods;
 
     const onSave = async (data: SendEmailContactFormData): Promise<any> => {
-        emailjs.send("service_e23n6h9", "template_pe67ijs", data, 'Fd8CvKZwAuHWdj1FJ')
-
-            .then((res) => {
-                toast.success("Mensagem enviada com sucesso !");
-                console.log("Email enviado", res.status, res.text)
-            })
-            .catch((err) => {
-                console.log("ERRO", err)
-            })
+        emailjs.send(
+            env.SERVICE_EMAIL ?? "", 
+            env.TEMPLATE_EMAIL ?? "", 
+            data, 
+            env.SECRET_KEY_EMAIL ?? ""
+        ).then((res) => {
+            toast.success("Mensagem enviada com sucesso !");
+            console.log("Email enviado", res.status, res.text)
+        })
+        .catch((err) => {
+            console.log("ERRO", err)
+        })
     }
 
     const onSubmit: SubmitHandler<SendEmailContactFormData> = (data) => {
