@@ -1,18 +1,11 @@
 /** @type {(tailwindConfig: object) => object} */
 
-const withMT = require("@mui/material/utils/withMT");
-
-module.exports = withMT({
+module.exports = {
   darkMode: "class",
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@mui/material/components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@mui/material/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -46,4 +39,4 @@ module.exports = withMT({
     },
   },
   plugins: [],
-});
+};
