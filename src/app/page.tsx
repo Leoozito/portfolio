@@ -1,11 +1,9 @@
-import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import Apresentacao from '../sections/Apresentacao'
-import Biografia from '../sections/Biografia'
-import Habilidades from '../sections/Habilidade'
-import Experience from '../sections/Experiencia'
-import Projects from '../sections/Projetos'
-import Contact from '../sections/Contact'
+import Presentation from './presentation'
+import Biography from './biography'
+import Skills from './skills'
+import Experience from './experiences'
+import Contact from './contact'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -16,7 +14,7 @@ export default function Home() {
       <div className="xs:h-[670px] sm:h-[650px] md:h-[620px] relative dark:bg-[rgb(2,6,23)] dark:from-[#1e1b4b] bg-gradient-to-t from-indigo-200 overflow-hidden w-full dark:-z-40">
           <section id="apresentacao">
             <div className=''>
-              <Apresentacao/>
+              <Presentation/>
             </div>
           </section>
       </div>
@@ -25,12 +23,12 @@ export default function Home() {
         <div className="blob w-[450px] h-[450px] rounded absolute top-40 left-60 blur-3xl bg-opacity-60 bg-indigo-500"></div>
         <div className='sm:my-40 md:mt-16 lg:mt-20 lg:mb-40'>
           <section id="biografia">
-            <Biografia/>
+            <Biography/>
           </section>
         </div>
         <div className='mt-32 xs:mx-2 sm:mx-12'>
           <section id="habilidades">
-            <Habilidades/>
+            <Skills/>
           </section>
         </div>
         <div className='relative xs:mx-2 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24 md:mt-10'>
