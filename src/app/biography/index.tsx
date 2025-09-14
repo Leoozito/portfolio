@@ -1,10 +1,10 @@
 'use client'
 import Image from "next/image"
-import { Card } from "@material-tailwind/react"
+import { Card } from "@mui/material"
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-export default function Biografia() {
+export default function Biography() {
     const scrollRef = useRef(null)
 
     return (
@@ -36,13 +36,12 @@ export default function Biografia() {
                         whileInView={{ opacity: 1 }}
                     >
                         <Card 
-                            placeholder="descrição sobre mim" className="dark:bg-[#1e293b]"
+                            className="dark:bg-[#1e293b]"
                         >
-
-                                <p className="dark:text-white sm:text-lg p-6 rounded-md">
-                                    Sou apaixonado por tecnologia e suas evoluções constante. Para mim, ter a sensação
-                                    de finalmente descobrir uma solução para um problema {" "}<span className="font-bold text-indigo-700 dark:text-[#818cf8]">é algo  sensacional</span>.
-                                </p>
+                            <p className="dark:text-white sm:text-lg p-6 rounded-md">
+                                Sou apaixonado por tecnologia e suas evoluções constante. Para mim, ter a sensação
+                                de finalmente descobrir uma solução para um problema {" "}<span className="font-bold text-indigo-700 dark:text-[#818cf8]">é algo  sensacional</span>.
+                            </p>
                         </Card>
                     </motion.div>
 
@@ -54,7 +53,6 @@ export default function Biografia() {
                         whileInView={{ opacity: 1 }}
                     >
                         <Card 
-                            placeholder="descrição sobre mim" 
                             className="mt-2 dark:bg-[#1e293b]"
                         >
                             <p className="dark:text-white sm:text-lg p-6 rounded-md">
@@ -76,7 +74,6 @@ export default function Biografia() {
                         whileInView={{ opacity: 1 }}
                     >
                         <Card
-                            placeholder="descrição sobre mim"  
                             className="mt-2 dark:bg-[#1e293b]"
                         >
                             <p className="dark:text-white sm:text-lg p-6 rounded-md">
